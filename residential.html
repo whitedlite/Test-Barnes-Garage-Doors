@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Barnes Garage Doors</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; margin-left: 240px; }
+    header { background: #222; padding: 2rem 1rem; position: fixed; top: 0; left: 0; height: 100vh; width: 220px; z-index: 1000; display: flex; flex-direction: column; align-items: center; gap: 2rem; }
+    header div { display: flex; flex-direction: column; align-items: center; text-align: center; }
+    header img { height: 125px; width: auto; aspect-ratio: 2 / 1; }
+    nav { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+    nav a { color: white; text-decoration: none; }
+    .container { max-width: 600px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    h2 { text-align: center; margin-bottom: 1.5rem; }
+    form label { display: block; margin-top: 1rem; font-weight: bold; }
+    form input, form textarea { width: 100%; padding: 0.75rem; margin-top: 0.5rem; border: 1px solid #ccc; border-radius: 5px; }
+    form button { margin-top: 1.5rem; padding: 0.75rem 1.5rem; background-color: #e63946; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    form button:hover { background-color: #d62839; }
+    .contact-phone { text-align: center; margin-top: 1.5rem; font-size: 1.1rem; }
+    .error-message { color: red; font-size: 0.9rem; }
+    .collection-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .collection-card {
+      width: 320px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+    .collection-card img {
+      width: 100%;
+      height: auto;
+    }
+    .collection-card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    .collection-card p {
+      font-size: 0.95rem;
+      color: #666;
+      padding: 0 1rem;
+    }
+    .collection-card button {
+      margin: 0.5rem;
+      padding: 0.5rem 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .collection-card button:first-of-type {
+      background-color: #e63946;
+      color: white;
+    }
+    .collection-card button:last-of-type {
+      background-color: #457b9d;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="/images/logo.png" alt="Barnes Garage Doors">
+      <nav>
+        <a href="/index.html">Home</a>
+        <a href="/residential.html">Residential</a>
+        <a href="/commercial.html">Commercial</a>
+        <a href="/service.html">Service & Repairs</a>
+        <a href="/about.html">About Us</a>
+        <a href="/contact.html">Contact Us</a>
+        <a href="tel:+12052173034" style="font-weight: bold;">📞 (205) 217-3034</a>
+      </nav>
+    </div>
+  </header>
+<h2>See Something You Love, Reach Out Lets Design It!</h2>
+<div class="collection-grid">
+
+    <div class="collection-card">
+      <img src="/images/collections/avante.webp" alt="Avante®">
+      <h3>Avante®</h3>
+      <p>Sleek aluminum frame and glass doors.</p>
+      
+      <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-AVANTEBR-24.pdf', '_blank')">BROCHURE</button>
+    </div>
+    
+    <div class="collection-card">
+      <img src="/images/collections/vertistack-avante.webp" alt="VertiStack® Avante®">
+      <h3>VertiStack® Avante®</h3>
+      <p>Trackless stacking glass garage doors.</p>
+      
+      <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-AVANTEBR-24.pdf', '_blank')">BROCHURE</button>
+    </div>
+    
+    <div class="collection-card">
+      <img src="/images/collections/avante-sleek.webp" alt="Avante® Sleek">
+      <h3>Avante® Sleek</h3>
+      <p>Frameless contemporary glass design.</p>
+      
+      <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-AVANTEBR-24.pdf', '_blank')">BROCHURE</button>
+    </div>
+    
+    <div class="collection-card">
+      <img src="/images/collections/gallery-steel.webp" alt="Gallery® Steel">
+      <h3>Gallery® Steel</h3>
+      <p>Grooved panel steel doors.</p>
+      
+      <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-GALLERY3LAYERSS-10.pdf', '_blank')">BROCHURE</button>
+    </div>
+    
+    <div class="collection-card">
+      <img src="/images/collections/bridgeport.webp" alt="Bridgeport™ Steel">
+      <h3>Bridgeport™ Steel</h3>
+      <p>Shaker style steel garage doors.</p>
+      
+      <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-BRIDGEPORT3LAYERSS-20.pdf', '_blank')">BROCHURE</button>
+    </div>
+    
+    <div class="collection-card">
+      <img src="/images/collections/modern-steel.webp" alt="Modern Steel™">
+      <h3>Modern Steel™</h3>
+      <p>Sleek panel steel doors.</p>
+      
+      <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-MODERNSTEELSS-15.pdf', '_blank')">BROCHURE</button>
+    </div>
+    
+    <div class="collection-card">
+      <img src="/images/collections/modern-steel-plank.webp" alt="Modern Steel Plank">
+        <h3>Modern Steel™ Ultra-Grain® Plank</h3>
+        <p>Wood-look steel doors.</p>
+        
+        <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-MODERNSTEELSS-15.pdf','_blank')">BROCHURE</button>
+    </div>    
+
+    <div class="collection-card">
+      <img src="/images/collections/classic-steel.webp" alt="Classic™ Steel">
+      <h3>Classic™ Steel</h3>
+      <p>Short or long panel doors.</p>
+      
+      <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-MODERNSTEELSS-15.pdf', '_blank')">BROCHURE</button>
+    </div>
+    
+    <div class="collection-card">
+      <img src="/images/collections/canyon-ridge-carriage-house-5-layer.webp" alt="Canyon Ridge® Carriage House 5-Layer">
+      <h3>Canyon Ridge® Carriage House</h3> 
+      <h3>5-Layer</h3>
+      <p>Composite faux wood overlays.</p>
+      
+      <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-CANYONRIDGEBR-20.pdf', '_blank')">BROCHURE</button>
+    </div>
+    
+    <div class="collection-card">
+      <img src="/images/collections/canyon-ridge-chevron.webp" alt="Canyon Ridge® Chevron">
+      <h3>Canyon Ridge® Chevron</h3>
+      <p>Chevron pattern faux wood doors.</p>
+      
+      <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-CANYONRIDGEBR-20.pdf', '_blank')">BROCHURE</button>
+    </div>
+    
+    <div class="collection-card">
+      <img src="/images/collections/canyon-ridge-louver.webp" alt="Canyon Ridge® Louver">
+      <h3>Canyon Ridge® Louver</h3>
+      <p>Tropical-inspired louver panel garage doors.</p>
+      
+      <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-CANYONRIDGEBR-20.pdf', '_blank')">BROCHURE</button>
+    </div>
+    
+    <div class="collection-card">
+      <img src="/images/collections/canyon-ridge-carriage-house-4-layer.webp" alt="Canyon Ridge® Carriage House 4-Layer">
+      <h3>Canyon Ridge® Carriage House</h3> 
+      <h3>4-Layer</h3>
+      <p>Insulated faux wood garage doors on a steel base.</p>
+      
+      <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-CANYONRIDGEBR-20.pdf', '_blank')">BROCHURE</button>
+    </div>
+    
+    <div class="collection-card">
+      <img src="/images/collections/canyon-ridge-modern.webp" alt="Canyon Ridge® Modern">
+      <h3>Canyon Ridge® Modern</h3>
+      <p>Modern faux wood styles with flush panels.</p>
+      
+      <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-CANYONRIDGEBR-20.pdf', '_blank')">BROCHURE</button>
+    </div>
+    
+    <div class="collection-card">
+      <img src="/images/collections/canyon-ridge-elements.webp" alt="Canyon Ridge® Elements">
+      <h3>Canyon Ridge® Elements</h3>
+      <p>Painted faux wood garage doors.</p>
+      
+      <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-CANYONRIDGEBR-20.pdf', '_blank')">BROCHURE</button>
+    </div>
+    
+    <div class="collection-card">
+      <img src="/images/collections/coachman.webp" alt="Coachman®">
+      <h3>Coachman®</h3>
+      <p>Insulated steel and composite carriage house garage doors.</p>
+      
+      <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-COACHSS-12.pdf', '_blank')">BROCHURE</button>
+    </div>
+    
+    <div class="collection-card">
+      <img src="/images/collections/reserve-wood-custom.webp" alt="Reserve® Wood Limited Edition & Custom">
+      <h3>Reserve® Wood</h3> 
+      <h3>Limited Edition & Custom</h3>
+      <p>Handcrafted wood garage doors.</p>
+      
+      <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-WOODIDEA-10.pdf', '_blank')">BROCHURE</button>
+    </div>
+    
+    <div class="collection-card">
+      <img src="/images/collections/reserve-wood-modern.webp" alt="Reserve® Wood Modern">
+      <h3>Reserve® Wood Modern</h3>
+      <p>Contemporary natural wood doors.</p>
+      
+      <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-WOODIDEA-10.pdf', '_blank')">BROCHURE</button>
+    </div>
+    
+    <div class="collection-card">
+      <img src="/images/collections/reserve-wood-semi-custom.webp" alt="Reserve® Wood Semi-Custom">
+      <h3>Reserve® Wood Semi-Custom</h3>
+      <p>Semi-custom wood garage doors.</p>
+      
+      <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-WOODIDEA-10.pdf', '_blank')">BROCHURE</button>
+    </div>
+    
+    <div class="collection-card">
+      <img src="/images/collections/reserve-wood-extira.webp" alt="Reserve® Wood Extira®">
+      <h3>Reserve® Wood Extira®</h3>
+      <p>Extira® engineered wood garage doors.</p>
+      
+      <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-WOODIDEA-10.pdf', '_blank')">BROCHURE</button>
+    </div>
+    
+    <div class="collection-card">
+      <img src="/images/collections/classic-wood.webp" alt="Classic™ Wood">
+      <h3>Classic™ Wood</h3>
+      <p>Traditional wood panel garage doors.</p>
+      
+      <button onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-WOODIDEA-10.pdf', '_blank')">BROCHURE</button>
+    </div>
+    </div>
+
+
+
+
+
+
+</body></html>
