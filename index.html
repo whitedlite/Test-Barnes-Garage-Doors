@@ -4,317 +4,211 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Barnes Garage Doors | Home</title>
-  
-
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    padding-left: 240px;
-    background: #f4f4f4;
-  }
-  header {
-    background: #222;
-    padding: 2rem 1rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 220px;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
-  header div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  header img {
-    height: 160px;
-    width: auto;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-
-  .carousel {
-    position: relative;
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-  }
-  .slides {
-    display: flex;
-    height: 100%;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-.slides img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-  .nav-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    z-index: 100;
-  }
-  .prev { left: 10px; }
-  .next { right: 10px; }
-
-  .main-overlay {
-    position: absolute;
-    bottom: 30px;
-    left: 60px;
-    background-color: rgba(34, 34, 34, 0.8);
-    color: white;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    max-width: 400px;
-  }
-
-  .cta-button {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.6rem 1.2rem;
-    background-color: #e63946;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-  }
-  .cta-button:hover {
-    background-color: #d62839;
-  }
-</style>
-
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
 
-<div style="width: 100%; background-color: #e63946; color: white; overflow: hidden;">
-  <div style="white-space: nowrap; display: inline-block; padding: 0.5rem 0; animation: scroll 25s linear infinite; font-weight: bold;">
-    Need Help? We're Here. &nbsp;&nbsp;|&nbsp;&nbsp; Bama's Best &nbsp;&nbsp;|&nbsp;&nbsp; 24/7 Service Available &nbsp;&nbsp;|&nbsp;&nbsp; Call Today For Your Free Personalized Quote &nbsp;&nbsp;|&nbsp;&nbsp; Doors Made In USA &nbsp;&nbsp;&nbsp;&nbsp;
+<!-- Top Utility Bar -->
+<div class="top-bar">
+  <span>Serving Central Alabama — Residential & Commercial Garage Door Experts</span>
+  <div class="top-bar-links">
+    <a href="tel:+12052173034">(205) 217-3034</a>
+    <span>|</span>
+    <a href="/contact.html">Free Quote</a>
   </div>
 </div>
-<style>
-@keyframes scroll {
-  from { transform: translateX(100%); }
-  to { transform: translateX(-100%); }
-}
-</style>
 
-  <header>
-    <div>
+<!-- Header -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/index.html" class="header-logo">
       <img src="/images/logo.png" alt="Barnes Garage Doors">
-      <nav>
-        <a href="/index.html">Home</a>
-        <a href="/residential.html">Residential</a>
-        <a href="/commercial.html">Commercial</a>
-        <a href="/service.html">Service & Repairs</a>
-        <a href="/about.html">About Us</a>
-        <a href="/contact.html">Contact Us</a>
-        <a href="tel:+12052173034" style="font-weight: bold;">📞 (205) 217-3034</a>
-      </nav>
-    </div>
-  </header>
+    </a>
+    <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav">
+      <a href="/index.html" class="active">Home</a>
+      <a href="/residential.html">Residential</a>
+      <a href="/commercial.html">Commercial</a>
+      <a href="/service.html">Service & Repairs</a>
+      <a href="/about.html">About Us</a>
+      <a href="/contact.html">Contact Us</a>
+      <a href="tel:+12052173034" class="nav-cta">Call Now</a>
+    </nav>
+  </div>
+</header>
 
-  <div class="carousel">
-    <div class="slides" id="slides">
-  <img src="/images/remote.jpg" alt="Garage Door Remote">
-  <img src="/images/crooked_door.jpg" alt="Broken Garage Door">
-</div>
-    <button class="nav-btn prev" onclick="moveSlide(-1)">❮</button>
-    <button class="nav-btn next" onclick="moveSlide(1)">❯</button>
-
-    <div class="main-overlay">
-      <h2>Hi everyone, I'm Tanner, the owner here at Barnes Garage Doors LLC.</h2>
-      <p>I hope you enjoy the site I'm building myself. Expect changes and possibly errors as I run trials.</p>
-      <p>We specialize in garage door repairs, service, and sales for both residential and commercial properties.</p>
-      <a href="/contact.html" class="cta-button">Schedule Appointment</a>
+<!-- Hero Carousel -->
+<section class="hero">
+  <div class="hero-slides" id="heroSlides">
+    <img src="/images/remote.jpg" alt="Garage Door Remote">
+    <img src="/images/crooked_door.jpg" alt="Garage Door Repair">
+  </div>
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>Alabama's Trusted Garage Door Professionals</h1>
+      <p>From expert repairs to stunning new installations, Barnes Garage Doors delivers quality craftsmanship and reliable service you can count on.</p>
+      <a href="/contact.html" class="btn btn-white">Schedule Your Free Quote</a>
     </div>
   </div>
+  <button class="hero-nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+  <button class="hero-nav-btn next" onclick="moveSlide(1)">&#10095;</button>
+</section>
 
-  <script>
-    let index = 0;
-    const slides = document.getElementById('slides');
-    const totalSlides = slides.children.length;
+<!-- Features Section -->
+<section class="section section-light">
+  <div class="section-header">
+    <h2>Why Choose Barnes Garage Doors?</h2>
+    <p>We bring expertise, honesty, and dedication to every job — big or small.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <span class="feature-icon">&#9881;</span>
+      <h3>Expert Repairs</h3>
+      <p>From broken springs to malfunctioning openers, our experienced technicians diagnose and fix issues quickly — often the same day you call.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">&#9733;</span>
+      <h3>Premium Installations</h3>
+      <p>We install top-quality Clopay garage doors in a wide range of styles, materials, and finishes to transform your home's curb appeal.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">&#128241;</span>
+      <h3>Free Personalized Quotes</h3>
+      <p>Get a no-obligation quote tailored to your needs. We'll help you find the perfect door at the right price for your budget.</p>
+    </div>
+  </div>
+</section>
 
-    function moveSlide(step) {
-      index = (index + step + totalSlides) % totalSlides;
-      updateCarousel();
-    }
+<!-- Browse Doors CTA -->
+<section class="cta-banner">
+  <h2>Find Your Perfect Garage Door</h2>
+  <p>Browse our full collection of Clopay residential garage doors — from classic steel to custom wood designs.</p>
+  <a href="/residential.html" class="btn btn-white">Browse Doors</a>
+</section>
 
-    function updateCarousel() {
-      slides.style.transform = 'translateX(' + (-index * 100) + '%)';
-    }
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+  <div class="section-header">
+    <h2>What Our Customers Say</h2>
+    <p>Trusted by homeowners across Central Alabama.</p>
+  </div>
+  <div class="testimonials-grid" id="testimonialGrid"></div>
+</section>
 
-    setInterval(() => {
-      moveSlide(1);
-    }, 8000);
-  </script>
-<style>
-.testimonials {
-  max-width: 1000px;
-  margin: 3rem auto;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-.testimonials h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-.testimonial {
-  margin-bottom: 1.5rem;
-  font-style: italic;
-}
-.testimonial strong {
-  display: block;
-  margin-top: 0.5rem;
-  text-align: right;
-  font-weight: bold;
-}
-</style>
+<!-- Bottom CTA -->
+<section class="cta-banner">
+  <h2>Ready to Get Started?</h2>
+  <p>Whether you need a repair, a new door, or just some expert advice — we're here to help.</p>
+  <a href="/contact.html" class="btn btn-white">Contact Us Today</a>
+</section>
 
-<div class="testimonials">
-  <h2>What Our Customers Say</h2>
-  <div id="testimonial" class="testimonial"></div>
-</div>
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="/images/logo.png" alt="Barnes Garage Doors">
+      <p>Locally owned and operated in Alabama. We specialize in garage door repairs, service, and sales for both residential and commercial properties.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/residential.html">Residential Doors</a></li>
+        <li><a href="/commercial.html">Commercial Doors</a></li>
+        <li><a href="/service.html">Service & Repairs</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul class="footer-links">
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul class="footer-links">
+        <li><a href="tel:+12052173034">(205) 217-3034</a></li>
+        <li>Central Alabama</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Barnes Garage Doors LLC. All rights reserved.</span>
+  </div>
+</footer>
 
+<!-- Carousel Script -->
+<script>
+  let slideIndex = 0;
+  const slides = document.getElementById('heroSlides');
+  const totalSlides = slides.children.length;
+
+  function moveSlide(step) {
+    slideIndex = (slideIndex + step + totalSlides) % totalSlides;
+    slides.style.transform = 'translateX(' + (-slideIndex * 100) + '%)';
+  }
+
+  setInterval(function() { moveSlide(1); }, 8000);
+</script>
+
+<!-- Testimonials Script -->
 <script>
 const testimonials = [
-  { text: "They communicated clearly and arrived on time.", author: "— Amelia P., Alabaster, AL" },
-  { text: "Fantastic experience from start to finish.", author: "— Ethan V., Pelham, AL" },
-  { text: "Couldn’t have asked for better service.", author: "— Mia B., Alabaster, AL" },
-  { text: "Quality work at a fair price!", author: "— Mason T., Mountain Brook, AL" },
-  { text: "They communicated clearly and arrived on time, and left no mess behind.", author: "— Sophia D., Hoover, AL" },
-  { text: "I highly recommend Level Up Doors to everyone.", author: "— Harper N., Vestavia Hills, AL" },
-  { text: "Installation was smooth and Tanner was so respectful.", author: "— Anthony C., Mountain Brook, AL" },
-  { text: "The new garage door has transformed our home's look, it's much quieter than the old unit.", author: "— Sarah J., Leeds, AL" },
-  { text: "Quick install and great customer service.", author: "— Jessica T., Trussville, AL" },
-  { text: "Quick install and great customer service, with follow ups along the way during shipping.", author: "— Benjamin S., Trussville, AL" },
-  { text: "Communication was the best it could've been updates when needed, there were no delays.", author: "— Anthony C., Birmingham, AL" },
-  { text: "Absolutely thrilled with the new garage door. It’s stylish, quiet, and super durable.", author: "— Noah L., Gardendale, AL" },
-  { text: "We had a great experience from quote to install. The crew was on time and professional.", author: "— Ethan V., Birmingham, AL" },
-  { text: "The craftsmanship was top-notch. You can tell these doors are built to last.", author: "— James W., Trussville, AL" },
-  { text: "We’re beyond happy with the results!", author: "— Ethan V., Mountain Brook, AL" },
-  { text: "Best investment we’ve made for our home in years. Adds so much curb appeal!", author: "— Mia B., Alabaster, AL" },
-  { text: "Installation was quick, clean, and done exactly as promised. Highly recommend.", author: "— Liam B., Pelham, AL" },
-  { text: "Tanner helped me choose the right style and finish. It completely transformed my house.", author: "— Anthony C., Gardendale, AL" },
-  { text: "I was impressed by the attention to detail and commitment to a quality install.", author: "— Ethan V., Trussville, AL" },
-  { text: "Great local company with excellent customer service. I’ll definitely use them again if ever needed", author: "— Sophia D., Leeds, AL" },
-  { text: "It’s rare to find such honest and hardworking professionals these days.", author: "— Amelia P., Birmingham, AL" },
-  { text: "They showed up early, explained every step, and didn’t leave until everything was perfect.", author: "— Ethan V., Mountain Brook, AL" },
-  { text: "Our new door is smooth, quiet, and seals perfectly. We couldn’t be happier.", author: "— Jessica T., Trussville, AL" },
-  { text: "Tanner replaced a broken spring within hours. Fast and friendly service.", author: "— Logan Z., Alabaster, AL" },
-  { text: "Excellent communication from the first call to the final walkthrough.", author: "— Lucas K., Gardendale, AL" },
-  { text: "Very fair pricing and top-quality worksmanship. Worth every penny.", author: "— Olivia H., Trussville, AL" },
-  { text: "I was surprised how quickly they installed our door. Flawless work.", author: "— Harper N., Homewood, AL" },
-  { text: "Tanner takes pride in his work, and it shows. The door looks incredible.", author: "— Charlotte F., Hoover, AL" },
-  { text: "Friendly staff, all design options, and perfect installation. What more can you ask for?", author: "— Mia B., Hoover, AL" },
-  { text: "Got quotes from three companies. Level Up Doors had the best value by far.", author: "— Logan Z., Homewood, AL" },
-  { text: "Our garage is warmer in the winter, cooler in the summer, and quieter now thanks to the insulated door they installed.", author: "— Isabella M., Alabaster, AL" },
-  { text: "We love how the new door complements our exterior. Huge difference in appearance.", author: "— James W., Alabaster, AL" },
-  { text: "Installation was smooth and the team was respectful.", author: "— Jessica T., Leeds, AL" },
-  { text: "It’s rare to find a company that’s fast, affordable, and high-quality, but Tanner nailed it.", author: "— Amelia P., Trussville, AL" },
-  { text: "They helped program our remotes and walked us through maintenance tips.”", author: "— Sarah J., Birmingham, AL" },
-  { text: "They communicated clearly and delivered on time.", author: "— Sophia D., Trussville, AL" },
-  { text: "The installer was neat, polite, and cleaned everything up afterwards.", author: "— Jessica T., Mountain Brook, AL" },
-  { text: "Very professional team and great prices.", author: "— Amelia P., Alabaster, AL" },
-  { text: "Top-notch service from start to finish. Tanner knows what he is doing.", author: "— Isabella M., Alabaster, AL" },
-  { text: "If you need a garage door in Alabama, this is the team to call. 10/10.", author: "— Mason T., Montgomery, AL" },
-  { text: "Tanner replaced our broken garage door spring the same day we called. A+", author: "— Jessica T., Pelham, AL" },
-  { text: "Our opener died and they had a new one installed next day in under two hours.", author: "— Jessica T., Trussville, AL" },
-  { text: "Tanner adjusted our noisy chain and it’s now smooth and quiet.", author: "— Ethan V., Alabaster, AL" },
-  { text: "Highly recommend Level Up Doors to everyone.", author: "— Liam B., Gardendale, AL" },
-  { text: "They diagnosed our intermittent opener issue and had it working perfectly again.", author: "— Mike R., Leeds, AL" },
-  { text: "One panel was damaged during a storm, they matched the panel and replaced it flawlessly.", author: "— Sophia D., Hoover, AL" },
-  { text: "The new garage door has transformed our home's look.", author: "— Mason T., Trussville, AL" },
-  { text: "Our door was stuck halfway open. Tanner was there same day and had it fixed in less than 30 mins.", author: "— Isabella M., Gardendale, AL" },
-  { text: "Great experience finding a compatible remote for our old system and reprogramming everything, fast and friendly.", author: "— Lucas K., Homewood, AL" },
-  { text: "Highly recommend Level Up Doors to everyone.", author: "— Charlotte F., Hoover, AL" },
-  { text: "Fantastic experience from start to finish.", author: "— Mason T., Trussville, AL" },
-  { text: "Couldn’t have asked for better service.", author: "— Liam B., Vestavia Hills, AL" },
-  { text: "Installation was smooth and the team was respectful.", author: "— Noah L., Hoover, AL" },
-  { text: "They communicated clearly and delivered on time.", author: "— Mia B., Mountain Brook, AL" },
-  { text: "Very professional team and great prices.", author: "— Ethan V., Hoover, AL" },
-  { text: "Quality work at a fair price!", author: "— Emma G., Pelham, AL" },
-  { text: "Incredible service and attention to detail. I won’t use or recommend anyone else for garage door repairs again.", author: "— Liam B., Alabaster, AL" },
-  { text: "We may be old, but they replaced our old opener with a model that’s so quiet we can’t hear it inside the house.", author: "— Sarah J., Pelham, AL" },
-  { text: "The remote range used to be terrible, with the new unit I can open the door from the end of the driveway.", author: "— Logan Z., Vestavia Hills, AL" },
-  { text: "I appreciated that they didn’t rush. They took their time to do it right and tested every feature", author: "— Sarah J., Vestavia Hills, AL" },
-  { text: "After a year or more of struggling with our garage door, it finally works perfectly thanks to their help.", author: "— Mike R., Trussville, AL" },
-  { text: "Installed a quiet drive opener and I can’t believe how much better it is than the old one.", author: "— Harper N., Gardendale, AL" },
-  { text: "I scheduled a tune-up and Tanner found and fixed two issues I hadn’t even noticed... At no extra cost, super thorough work!”", author: "— Emma G., Homewood, AL" },
-  { text: "Very impressed with their honesty. Tanner told me I didn’t need a full replacement, just a tune-up..", author: "— Jessica T., Birmingham, AL" },
-  { text: "The wall switch stopped working, they traced the wiring and replaced a bad connection..", author: "— Olivia H., Gardendale, AL" },
-  { text: "We had water getting in, they added a new bottom seal and side weatherstripping. No more leaks.", author: "— Olivia H., Gardendale, AL" },
-  { text: "I didn’t realize how dangerous broken springs could be till a couple of youtube vids, they handled it quickly and safely.", author: "— Lucas K., Leeds, AL" },
-  { text: "They explained how to maintain our new door and opener and gave tips for extending its life.", author: "— Benjamin S., Homewood, AL" },
-  { text: "Tanner arrived right on time, and wasted no time getting the install complete and on his way.", author: "— James W., Vestavia Hills, AL" },
-  { text: "One of the hinges cracked and they replaced it with a heavy-duty hinge, noticebly thicker.", author: "— Mason T., Hoover, AL" },
-  { text: "We thought we needed a new opener, but they repaired the motor and saved us hundreds", author: "— Jessica T., Gardendale, AL" },
-  { text: "After trying DIY fixes, I finally called the pros. They had it done in 30 minutes.", author: "— Mason T., Vestavia Hills, AL" },
-  { text: "They installed a new belt drive opener and it's incredibly quiet compared to the old chain one.", author: "— Jessica T., Mountain Brook, AL" },
-  { text: "We were getting ready to sell the house, they tuned up the door and made it pass inspection for buyer.", author: "— Isabella M., Pelham, AL" },
-  { text: "Our garage door kept reversing when it hit the concrete, they fixed the travel limits.", author: "— Noah L., Homewood, AL" },
-  { text: "They cleaned up the old wiring and made everything look neat, very thorough work", author: "— Charlotte F., Gardendale, AL" },
-  { text: "After a storm knocked out our opener, they replaced the board and got it going the same day.", author: "— Isabella M., Hoover, AL" },
-  { text: "I appreciated that they explained everything they were doing while fixing the spring system", author: "— Anthony C., Alabaster, AL" },
-  { text: "Our opener chain was loose, they tightened it and now it's much quieter.", author: "— Jessica T., Homewood, AL" },
-  { text: "We had a bent hinge that was causing resistance, replaced it and realigned the track", author: "— Benjamin S., Homewood, AL" },
-  { text: "They lubed all moving parts and now there’s no more creaking or popping when we open the door.", author: "— Emma G., Hoover, AL" },
-  { text: "The safety sensor kept blinking, they talked me through realigning it in minutes. Super simple fix.”", author: "— Harper N., Mountain Brook, AL" },
-  { text: "Our garage door cable came off on a weekend, they had it fixed same day.", author: "— Benjamin S., Alabaster, AL" },
-  { text: "They retensioned our springs and lubed everything. Sounds like a new door now.", author: "— Emma G., Homewood, AL" },
-  { text: "The gear in our opener stripped and they swapped it quickly. Works like new.", author: "— Isabella M., Gardendale, AL" },
-  { text: "We had issues every winter, they replaced the weather seal around the door and adjusted the opener.", author: "— Sophia D., Homewood, AL" },
-  { text: "The emergency release red pull cord wasn’t working replaced a few parts and it's working again.", author: "— Mike R., Gardendale, AL" },
-  { text: "Quick fix for a crooked door that was dragging. Straightened it and adjusted the tension.", author: "— Jessica T., Gardendale, AL" },
-  { text: "Tanner didn’t try to upsell me on a new opener, he just cleaned and serviced what I had.", author: "— Ethan V., Pelham, AL" },
-  { text: "I had a jammed roller and they cleaned the tracks and replaced the entire set of rollers for a smoother, quieter glide.", author: "— Noah L., Trussville, AL" },
-  { text: "The opener wasn't responding, after a new wall button and safety sensors they installed voila", author: "— Amelia P., Trussville, AL" },
-  { text: "They balanced the door and now our opener doesn't sound like it's straining anymore.", author: "— Ethan V., Leeds, AL" },
-  { text: "We couldn’t close the door during a power outage, after a phone call Tanner walked us through the process of disengaging the opener and getting the door closed for the night.", author: "— Emma G., Homewood, AL" },
-  { text: "I had no idea how dangerous garage door springs were. After research I decided to call these guys", author: "— Anthony C., Homewood, AL" },
-  { text: "Our garage door would slam shut, they fixed the tension, replaced the worn cables, and shown us where to lube in the future.", author: "— Mike R., Leeds, AL" },
-  { text: "The opener light was flickering and they diagnosed and replaced the logic board. No more flickering!", author: "— Liam B., Trussville, AL" },
-  { text: "They replaced both torsion springs with high-cycle ones and new cables. Door is quieter and more durable now.", author: "— Logan Z., Vestavia Hills, AL" },
-  { text: "The keypad wouldn’t sync with our opener, and they fixed it and showed us how to reprogram it. If it ever happens again.", author: "— Harper N., Gardendale, AL" },
-  { text: "We thought we needed a whole new door, but they saved us money with just a repair.", author: "— James W., Alabaster, AL" },
-  { text: "They repaired our bent tracks and adjusted the door alignment so it finally closes right.", author: "— Sarah J., Pelham, AL" }
+  { text: "They communicated clearly and arrived on time.", author: "Amelia P., Alabaster, AL" },
+  { text: "Fantastic experience from start to finish.", author: "Ethan V., Pelham, AL" },
+  { text: "Couldn't have asked for better service.", author: "Mia B., Alabaster, AL" },
+  { text: "Quality work at a fair price!", author: "Mason T., Mountain Brook, AL" },
+  { text: "They communicated clearly and arrived on time, and left no mess behind.", author: "Sophia D., Hoover, AL" },
+  { text: "Installation was smooth and Tanner was so respectful.", author: "Anthony C., Mountain Brook, AL" },
+  { text: "The new garage door has transformed our home's look, it's much quieter than the old unit.", author: "Sarah J., Leeds, AL" },
+  { text: "Quick install and great customer service.", author: "Jessica T., Trussville, AL" },
+  { text: "Quick install and great customer service, with follow ups along the way during shipping.", author: "Benjamin S., Trussville, AL" },
+  { text: "Absolutely thrilled with the new garage door. It's stylish, quiet, and super durable.", author: "Noah L., Gardendale, AL" },
+  { text: "We had a great experience from quote to install. The crew was on time and professional.", author: "Ethan V., Birmingham, AL" },
+  { text: "The craftsmanship was top-notch. You can tell these doors are built to last.", author: "James W., Trussville, AL" },
+  { text: "Best investment we've made for our home in years. Adds so much curb appeal!", author: "Mia B., Alabaster, AL" },
+  { text: "Installation was quick, clean, and done exactly as promised. Highly recommend.", author: "Liam B., Pelham, AL" },
+  { text: "Tanner helped me choose the right style and finish. It completely transformed my house.", author: "Anthony C., Gardendale, AL" },
+  { text: "I was impressed by the attention to detail and commitment to a quality install.", author: "Ethan V., Trussville, AL" },
+  { text: "Great local company with excellent customer service. I'll definitely use them again if ever needed.", author: "Sophia D., Leeds, AL" },
+  { text: "It's rare to find such honest and hardworking professionals these days.", author: "Amelia P., Birmingham, AL" },
+  { text: "They showed up early, explained every step, and didn't leave until everything was perfect.", author: "Ethan V., Mountain Brook, AL" },
+  { text: "Our new door is smooth, quiet, and seals perfectly. We couldn't be happier.", author: "Jessica T., Trussville, AL" },
+  { text: "Tanner replaced a broken spring within hours. Fast and friendly service.", author: "Logan Z., Alabaster, AL" },
+  { text: "Excellent communication from the first call to the final walkthrough.", author: "Lucas K., Gardendale, AL" },
+  { text: "Very fair pricing and top-quality workmanship. Worth every penny.", author: "Olivia H., Trussville, AL" },
+  { text: "I was surprised how quickly they installed our door. Flawless work.", author: "Harper N., Homewood, AL" },
+  { text: "Tanner takes pride in his work, and it shows. The door looks incredible.", author: "Charlotte F., Hoover, AL" },
+  { text: "Friendly staff, all design options, and perfect installation. What more can you ask for?", author: "Mia B., Hoover, AL" },
+  { text: "Got quotes from three companies. Barnes had the best value by far.", author: "Logan Z., Homewood, AL" },
+  { text: "Our garage is warmer in the winter, cooler in the summer, and quieter now thanks to the insulated door they installed.", author: "Isabella M., Alabaster, AL" },
+  { text: "We love how the new door complements our exterior. Huge difference in appearance.", author: "James W., Alabaster, AL" },
+  { text: "It's rare to find a company that's fast, affordable, and high-quality, but Tanner nailed it.", author: "Amelia P., Trussville, AL" },
+  { text: "Very professional team and great prices.", author: "Amelia P., Alabaster, AL" },
+  { text: "Top-notch service from start to finish. Tanner knows what he is doing.", author: "Isabella M., Alabaster, AL" },
+  { text: "If you need a garage door in Alabama, this is the team to call. 10/10.", author: "Mason T., Montgomery, AL" },
+  { text: "Tanner replaced our broken garage door spring the same day we called. A+", author: "Jessica T., Pelham, AL" },
+  { text: "Our opener died and they had a new one installed next day in under two hours.", author: "Jessica T., Trussville, AL" },
+  { text: "Very impressed with their honesty. Tanner told me I didn't need a full replacement, just a tune-up.", author: "Jessica T., Birmingham, AL" },
+  { text: "I had a jammed roller and they cleaned the tracks and replaced the entire set of rollers for a smoother, quieter glide.", author: "Noah L., Trussville, AL" },
+  { text: "They balanced the door and now our opener doesn't sound like it's straining anymore.", author: "Ethan V., Leeds, AL" },
+  { text: "We thought we needed a whole new door, but they saved us money with just a repair.", author: "James W., Alabaster, AL" },
+  { text: "They repaired our bent tracks and adjusted the door alignment so it finally closes right.", author: "Sarah J., Pelham, AL" }
 ];
-document.addEventListener("DOMContentLoaded", () => {
-  const selected = testimonials.sort(() => 0.5 - Math.random()).slice(0, 3);
-  const container = document.getElementById("testimonial");
-  container.innerHTML = selected.map(t => `<div class='testimonial'>"${t.text}"<strong>${t.author}</strong></div>`).join('');
+
+document.addEventListener("DOMContentLoaded", function() {
+  var selected = testimonials.sort(function() { return 0.5 - Math.random(); }).slice(0, 3);
+  var grid = document.getElementById("testimonialGrid");
+  grid.innerHTML = selected.map(function(t) {
+    return '<div class="testimonial-card">' +
+      '<div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>' +
+      '<p>' + t.text + '</p>' +
+      '<span class="author">' + t.author + '</span>' +
+    '</div>';
+  }).join('');
 });
 </script>
 

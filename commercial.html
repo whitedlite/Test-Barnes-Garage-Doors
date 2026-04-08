@@ -1,48 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Barnes Garage Doors</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; margin-left: 240px; }
-    header { background: #222; padding: 2rem 1rem; position: fixed; top: 0; left: 0; height: 100vh; width: 220px; z-index: 1000; display: flex; flex-direction: column; align-items: center; gap: 2rem; }
-    header div { display: flex; flex-direction: column; align-items: center; text-align: center; }
-    header img { height: 125px; width: auto; aspect-ratio: 2 / 1; }
-    nav { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
-    nav a { color: white; text-decoration: none; }
-    .container { max-width: 600px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-    h2 { text-align: center; margin-bottom: 1.5rem; }
-    form label { display: block; margin-top: 1rem; font-weight: bold; }
-    form input, form textarea { width: 100%; padding: 0.75rem; margin-top: 0.5rem; border: 1px solid #ccc; border-radius: 5px; }
-    form button { margin-top: 1.5rem; padding: 0.75rem 1.5rem; background-color: #e63946; color: white; border: none; border-radius: 5px; cursor: pointer; }
-    form button:hover { background-color: #d62839; }
-    .contact-phone { text-align: center; margin-top: 1.5rem; font-size: 1.1rem; }
-    .error-message { color: red; font-size: 0.9rem; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Commercial Garage Doors | Barnes Garage Doors</title>
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
-  <header>
-    <div>
+
+<!-- Top Utility Bar -->
+<div class="top-bar">
+  <span>Serving Central Alabama — Residential & Commercial Garage Door Experts</span>
+  <div class="top-bar-links">
+    <a href="tel:+12052173034">(205) 217-3034</a>
+    <span>|</span>
+    <a href="/contact.html">Free Quote</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/index.html" class="header-logo">
       <img src="/images/logo.png" alt="Barnes Garage Doors">
-      <nav>
-        <a href="/index.html">Home</a>
-        <a href="/residential.html">Residential</a>
-        <a href="/commercial.html">Commercial</a>
-        <a href="/service.html">Service & Repairs</a>
-        <a href="/about.html">About Us</a>
-        <a href="/contact.html">Contact Us</a>
-        <a href="tel:+12052173034" style="font-weight: bold;">📞 (205) 217-3034</a>
-      </nav>
+    </a>
+    <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav">
+      <a href="/index.html">Home</a>
+      <a href="/residential.html">Residential</a>
+      <a href="/commercial.html" class="active">Commercial</a>
+      <a href="/service.html">Service & Repairs</a>
+      <a href="/about.html">About Us</a>
+      <a href="/contact.html">Contact Us</a>
+      <a href="tel:+12052173034" class="nav-cta">Call Now</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <h1>Commercial Garage Doors</h1>
+  <p>Durable, high-performance solutions for warehouses, storefronts, and commercial properties.</p>
+</section>
+
+<!-- Services Overview -->
+<section class="section">
+  <div class="section-header">
+    <h2>Commercial Door Solutions</h2>
+    <p>We install and service a wide range of commercial overhead doors built for durability, security, and performance.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">&#127981;</div>
+      <h3>Sectional Steel Doors</h3>
+      <p>Heavy-duty insulated and non-insulated sectional doors ideal for warehouses, loading docks, and industrial facilities.</p>
     </div>
-  </header>
+    <div class="service-card">
+      <div class="service-icon">&#128274;</div>
+      <h3>Rolling Steel Doors</h3>
+      <p>Space-saving roll-up doors designed for high-traffic commercial and industrial applications with maximum security.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">&#128722;</div>
+      <h3>Storefront Doors</h3>
+      <p>Attractive commercial doors for retail spaces, auto shops, and fire stations that balance aesthetics with functionality.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">&#9881;</div>
+      <h3>Commercial Openers</h3>
+      <p>High-cycle commercial operators built to handle the demands of busy commercial environments with reliable performance.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">&#128736;</div>
+      <h3>Maintenance Programs</h3>
+      <p>Preventive maintenance plans to keep your commercial doors operating safely and efficiently year-round.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">&#9889;</div>
+      <h3>Emergency Repairs</h3>
+      <p>Fast-response emergency repair service to minimize downtime for your business when a door failure occurs.</p>
+    </div>
+  </div>
+</section>
 
+<!-- CTA Banner -->
+<section class="cta-banner">
+  <h2>Need a Commercial Door Solution?</h2>
+  <p>Contact us for a free on-site assessment and quote tailored to your business needs.</p>
+  <a href="/contact.html" class="btn btn-white">Request a Quote</a>
+</section>
 
-
-
-
-
-
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="/images/logo.png" alt="Barnes Garage Doors">
+      <p>Locally owned and operated in Alabama. We specialize in garage door repairs, service, and sales for both residential and commercial properties.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/residential.html">Residential Doors</a></li>
+        <li><a href="/commercial.html">Commercial Doors</a></li>
+        <li><a href="/service.html">Service & Repairs</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul class="footer-links">
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul class="footer-links">
+        <li><a href="tel:+12052173034">(205) 217-3034</a></li>
+        <li>Central Alabama</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Barnes Garage Doors LLC. All rights reserved.</span>
+  </div>
+</footer>
 
 </body>
 </html>
