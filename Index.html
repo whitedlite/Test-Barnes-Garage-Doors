@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Barnes Garage Doors LLC | Alabama's Premier Garage Door Dealer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+```
+:root {
+  --navy: #1a2744;
+  --navy-light: #243359;
+  --gold: #b8975a;
+  --gold-light: #d4b07a;
+  --red: #c0392b;
+  --red-hover: #a93226;
+  --white: #ffffff;
+  --offwhite: #f8f6f2;
+  --gray-light: #efefef;
+  --gray-mid: #999;
+  --text: #2c2c2c;
+  --text-light: #555;
+}
+
+body { font-family: 'Source Sans 3', sans-serif; color: var(--text); background: var(--white); }
+
+/* ── ANNOUNCEMENT BAR ── */
+.announce-bar {
+  background: var(--navy);
+  color: var(--gold-light);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-align: center;
+  padding: 0.55rem 1rem;
+  text-transform: uppercase;
+}
+
+/* ── TOP NAV ── */
+.top-nav {
+  background: var(--white);
+  border-bottom: 1px solid #e0ddd8;
+  padding: 0 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.top-nav .logo img { height: 58px; width: auto; display: block; }
+.top-nav .main-links { display: flex; align-items: center; gap: 0.1rem; list-style: none; }
+.top-nav .main-links > li { position: relative; }
+.top-nav .main-links > li > a {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.top-nav .main-links > li > a:hover { color: var(--gold); }
+.top-nav .nav-actions { display: flex; align-items: center; gap: 1rem; }
+.btn-primary {
+  background: var(--red);
+  color: var(--white);
+  padding: 0.6rem 1.35rem;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover { background: var(--red-hover); }
+.btn-outline {
+  border: 2px solid var(--navy);
+  color: var(--navy);
+  padding: 0.55rem 1.2rem;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+.btn-outline:hover { background: var(--navy); color: var(--white); }
+.phone-nav {
+  color: var(--navy);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.phone-nav:hover { color: var(--gold); }
+
+/* ── HERO ── */
+.hero {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  background: var(--navy);
+}
+.hero-slides { display: flex; height: 100%; transition: transform 0.7s cubic-bezier(.4,0,.2,1); }
+.hero-slides img { width: 100%; height: 100%; object-fit: cover; flex-shrink: 0; filter: brightness(0.72); }
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 5% 4rem;
+  background: linear-gradient(to top, rgba(10,18,40,0.82) 0%, rgba(10,18,40,0.1) 60%, transparent 100%);
+}
+.hero-content { max-width: 560px; }
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+.hero-content h1 span { color: var(--gold-light); }
+.hero-content p { color: rgba(255,255,255,0.85); font-size: 1.05rem; line-height: 1.6; margin-bottom: 1.5rem; }
+.hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn-hero {
+  background: var(--red);
+  color: var(--white);
+  padding: 0.8rem 2rem;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: background 0.2s;
+}
+.btn-hero:hover { background: var(--red-hover); }
+.btn-hero-ghost {
+  border: 2px solid rgba(255,255,255,0.7);
+  color: var(--white);
+  padding: 0.8rem 2rem;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+.btn-hero-ghost:hover { background: rgba(255,255,255,0.15); }
+.hero-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.2s;
+  z-index: 10;
+}
+.hero-nav-btn:hover { background: rgba(255,255,255,0.3); }
+.hero-nav-btn.prev { left: 1.5rem; }
+.hero-nav-btn.next { right: 1.5rem; }
+
+/* ── SECTION COMMONS ── */
+section { padding: 5rem 5%; }
+.section-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.6rem;
+}
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: var(--navy);
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+.section-subtitle { color: var(--text-light); font-size: 1.05rem; line-height: 1.65; max-width: 620px; }
+
+/* ── WHY US STRIP ── */
+.why-strip {
+  background: var(--navy);
+  padding: 3.5rem 5%;
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.why-item { text-align: center; }
+.why-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+.why-item h3 { color: var(--gold-light); font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+.why-item p { color: rgba(255,255,255,0.72); font-size: 0.92rem; line-height: 1.55; }
+
+/* ── CATEGORY CARDS ── */
+.categories { background: var(--offwhite); }
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+  max-width: 1200px;
+}
+.cat-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--navy);
+  height: 320px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+}
+.cat-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; filter: brightness(0.65); }
+.cat-card:hover img { transform: scale(1.04); filter: brightness(0.5); }
+.cat-card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(10,18,40,0.92) 0%, transparent 100%);
+}
+.cat-card-body h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--white);
+  font-size: 1.4rem;
+  margin-bottom: 0.35rem;
+}
+.cat-card-body p { color: rgba(255,255,255,0.75); font-size: 0.88rem; margin-bottom: 0.75rem; }
+.cat-link {
+  color: var(--gold-light);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ── TESTIMONIALS ── */
+.testimonials { background: var(--white); }
+.test-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+  max-width: 1100px;
+}
+.test-card {
+  background: var(--offwhite);
+  border-left: 4px solid var(--gold);
+  padding: 1.75rem;
+  border-radius: 3px;
+}
+.test-card blockquote { font-style: italic; color: var(--text); line-height: 1.65; font-size: 0.97rem; margin-bottom: 1rem; }
+.test-card cite { font-style: normal; font-weight: 700; font-size: 0.85rem; color: var(--navy); letter-spacing: 0.04em; text-transform: uppercase; }
+.stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 0.5rem; letter-spacing: 0.05em; }
+
+/* ── CLOPAY BADGE ── */
+.clopay-section {
+  background: var(--navy);
+  padding: 4rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.clopay-section h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--white);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  max-width: 560px;
+  line-height: 1.3;
+}
+.clopay-section h2 span { color: var(--gold-light); }
+.clopay-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+/* ── FOOTER ── */
+footer {
+  background: #0e1627;
+  color: rgba(255,255,255,0.65);
+  padding: 3.5rem 5% 2rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(3, 1fr);
+  gap: 3rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.footer-brand img { height: 52px; margin-bottom: 1rem; filter: brightness(0) invert(1); opacity: 0.85; }
+.footer-brand p { font-size: 0.88rem; line-height: 1.65; max-width: 280px; }
+.footer-col h4 {
+  color: var(--white);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.1rem;
+}
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+.footer-col ul li a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+.footer-col ul li a:hover { color: var(--gold-light); }
+.footer-bottom {
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.82rem;
+}
+.footer-bottom a { color: rgba(255,255,255,0.45); text-decoration: none; }
+.footer-bottom a:hover { color: var(--gold-light); }
+
+/* ── MOBILE ── */
+.hamburger { display: none; background: none; border: none; cursor: pointer; padding: 0.4rem; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); margin: 5px 0; transition: all 0.3s; }
+@media (max-width: 900px) {
+  .top-nav { padding: 0 1.25rem; }
+  .top-nav .main-links, .top-nav .nav-actions .btn-outline { display: none; }
+  .hamburger { display: block; }
+  .hero { height: 420px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .clopay-section { flex-direction: column; }
+}
+@media (max-width: 560px) {
+  .footer-grid { grid-template-columns: 1fr; }
+}
+```
+
+  </style>
+</head>
+<body>
+
+<!-- ANNOUNCE BAR -->
+
+<div class="announce-bar">
+  Authorized Clopay® Dealer &nbsp;|&nbsp; Serving Greater Birmingham, AL &nbsp;|&nbsp; Free Personalized Quotes &nbsp;|&nbsp; <a href="tel:+12052173034" style="color:inherit;">(205) 217-3034</a>
+</div>
+
+<!-- TOP NAV -->
+
+<nav class="top-nav">
+  <a href="index.html" class="logo"><img src="/images/logo.png" alt="Barnes Garage Doors LLC"></a>
+  <ul class="main-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="residential.html">Residential</a></li>
+    <li><a href="commercial.html">Commercial</a></li>
+    <li><a href="service.html">Service &amp; Repairs</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="tel:+12052173034" class="phone-nav">📞 (205) 217-3034</a>
+    <a href="contact.html" class="btn-primary">Get a Quote</a>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO CAROUSEL -->
+
+<div class="hero" role="region" aria-label="Hero">
+  <div class="hero-slides" id="heroSlides">
+    <img src="/images/remote.jpg" alt="Garage Door Service">
+    <img src="/images/crooked_door.jpg" alt="Garage Door Repair">
+  </div>
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <p class="section-label" style="color:var(--gold-light);">Authorized Clopay® Dealer — Birmingham, AL</p>
+      <h1>Beautiful Doors.<br><span>Expert Installation.</span></h1>
+      <p>Family-owned. Locally operated. We bring premium Clopay® garage doors and fast, honest service to homeowners and businesses across Greater Birmingham.</p>
+      <div class="hero-btns">
+        <a href="residential.html" class="btn-hero">Browse Doors</a>
+        <a href="contact.html" class="btn-hero-ghost">Schedule Service</a>
+      </div>
+    </div>
+  </div>
+  <button class="hero-nav-btn prev" onclick="moveSlide(-1)">&#8249;</button>
+  <button class="hero-nav-btn next" onclick="moveSlide(1)">&#8250;</button>
+</div>
+
+<!-- WHY BARNES -->
+
+<div class="why-strip">
+  <div class="why-grid">
+    <div class="why-item">
+      <div class="why-icon">🏠</div>
+      <h3>Family Owned</h3>
+      <p>Tanner Barnes personally oversees every project — your home gets the care it deserves.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">⚡</div>
+      <h3>Same-Day Service</h3>
+      <p>Broken springs, stuck doors, malfunctioning openers — we respond fast when it matters.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">🛡️</div>
+      <h3>Clopay® Certified</h3>
+      <p>We sell and install the #1 brand of garage doors sold through professional dealers in North America.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">💬</div>
+      <h3>100+ 5-Star Reviews</h3>
+      <p>Trusted by hundreds of homeowners in Hoover, Vestavia, Trussville, and beyond.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CATEGORIES -->
+
+<section class="categories">
+  <p class="section-label">What We Offer</p>
+  <h2 class="section-title">Find the Right Solution for Your Home</h2>
+  <p class="section-subtitle">From sleek modern glass panels to classic carriage house designs, we carry the full Clopay® lineup — plus complete repair and service.</p>
+  <div class="cat-grid">
+    <a href="residential.html" class="cat-card">
+      <img src="/images/collections/avante.webp" alt="Residential Doors">
+      <div class="cat-card-body">
+        <h3>Residential Doors</h3>
+        <p>19 Clopay® collections — steel, wood, glass &amp; more.</p>
+        <span class="cat-link">Browse All →</span>
+      </div>
+    </a>
+    <a href="commercial.html" class="cat-card">
+      <img src="/images/collections/gallery-steel.webp" alt="Commercial Doors">
+      <div class="cat-card-body">
+        <h3>Commercial Doors</h3>
+        <p>Rolling doors, sectional doors &amp; industrial solutions.</p>
+        <span class="cat-link">Learn More →</span>
+      </div>
+    </a>
+    <a href="service.html" class="cat-card">
+      <img src="/images/remote.jpg" alt="Service & Repair">
+      <div class="cat-card-body">
+        <h3>Service &amp; Repair</h3>
+        <p>Springs, openers, cables, panels — we fix it right the first time.</p>
+        <span class="cat-link">Get Help →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- CLOPAY PARTNER STRIP -->
+
+<div class="clopay-section">
+  <h2>Proud Authorized Dealer of <span>Clopay®</span> — America's #1 Garage Door Brand</h2>
+  <div class="clopay-btns">
+    <a href="residential.html" class="btn-primary">View Clopay® Collections</a>
+    <a href="contact.html" class="btn-outline" style="border-color:rgba(255,255,255,0.5);color:white;">Request a Quote</a>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+
+<section class="testimonials">
+  <p class="section-label">Customer Reviews</p>
+  <h2 class="section-title">What Our Customers Say</h2>
+  <div class="test-grid" id="testimonialGrid"></div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="/images/logo.png" alt="Barnes Garage Doors">
+      <p>Barnes Garage Doors LLC is a family-owned, authorized Clopay® dealer serving the Greater Birmingham, Alabama area. Quality you can count on.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="residential.html">Residential Doors</a></li>
+        <li><a href="commercial.html">Commercial Doors</a></li>
+        <li><a href="service.html">Service &amp; Repair</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.clopaydoor.com" target="_blank" rel="noopener">Clopay® Website</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+12052173034">(205) 217-3034</a></li>
+        <li><a href="contact.html">Schedule Appointment</a></li>
+        <li><span style="color:rgba(255,255,255,0.45);">Birmingham, AL Area</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Barnes Garage Doors LLC. All Rights Reserved.</span>
+    <span>Authorized Clopay® Dealer</span>
+  </div>
+</footer>
+
+<script>
+  // Hero carousel
+  let idx = 0;
+  const slides = document.getElementById('heroSlides');
+  const total = slides.children.length;
+  function moveSlide(step) {
+    idx = (idx + step + total) % total;
+    slides.style.transform = 'translateX(' + (-idx * 100) + '%)';
+  }
+  setInterval(() => moveSlide(1), 8000);
+
+  // Testimonials
+  const testimonials = [
+    { text: "They communicated clearly and arrived on time.", author: "Amelia P.", city: "Alabaster, AL" },
+    { text: "Fantastic experience from start to finish.", author: "Ethan V.", city: "Pelham, AL" },
+    { text: "Tanner helped me choose the right style and finish. It completely transformed my house.", author: "Anthony C.", city: "Gardendale, AL" },
+    { text: "The new garage door has transformed our home's look, it's much quieter than the old unit.", author: "Sarah J.", city: "Leeds, AL" },
+    { text: "Best investment we've made for our home in years. Adds so much curb appeal!", author: "Mia B.", city: "Alabaster, AL" },
+    { text: "Quick install and great customer service.", author: "Jessica T.", city: "Trussville, AL" },
+    { text: "Tanner replaced a broken spring within hours. Fast and friendly service.", author: "Logan Z.", city: "Alabaster, AL" },
+    { text: "Very fair pricing and top-quality workmanship. Worth every penny.", author: "Olivia H.", city: "Trussville, AL" },
+    { text: "Tanner takes pride in his work, and it shows. The door looks incredible.", author: "Charlotte F.", city: "Hoover, AL" },
+  ];
+  const selected = testimonials.sort(() => 0.5 - Math.random()).slice(0, 3);
+  document.getElementById('testimonialGrid').innerHTML = selected.map(t => `
+    <div class="test-card">
+      <div class="stars">★★★★★</div>
+      <blockquote>"${t.text}"</blockquote>
+      <cite>${t.author} &mdash; ${t.city}</cite>
+    </div>
+  `).join('');
+</script>
+
+</body>
+</html>
