@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Commercial Garage Doors | Barnes Garage Doors LLC</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffonts.googleapis.com%2F&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C5aefbd7dd5594ded506608de9653ff27%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484724870602%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=HGnjdCzwdGdh1jBFt5LhyeLEt%2BZaLq9ndtTASlJALeo%3D&reserved=0">
+  <link href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffonts.googleapis.com%2Fcss2%3Ffamily%3DPlayfair%2BDisplay%3Awght%40600%3B700%26family%3DSource%2BSans%2B3%3Awght%40300%3B400%3B600%3B700%26display%3Dswap&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C5aefbd7dd5594ded506608de9653ff27%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484724925472%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=1GTSvDn37t5YkIUDgPK96NRuBFaVgxhbgODRjwtLb60%3D&reserved=0" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root { --navy:#1a2744;--gold:#b8975a;--gold-light:#d4b07a;--red:#c0392b;--red-hover:#a93226;--white:#ffffff;--offwhite:#f8f6f2;--text:#2c2c2c;--text-light:#555; }
@@ -25,57 +24,48 @@
     .phone-nav:hover{color:var(--gold);}
     .hamburger{display:none;background:none;border:none;cursor:pointer;padding:.4rem;}
     .hamburger span{display:block;width:24px;height:2px;background:var(--navy);margin:5px 0;}
-
-```
-.page-hero{background:var(--navy);padding:4rem 5%;position:relative;overflow:hidden;}
-.page-hero::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:60px;background:var(--white);clip-path:ellipse(55% 100% at 50% 100%);}
-.page-hero-inner{max-width:680px;position:relative;z-index:1;}
-.section-label{font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light);margin-bottom:.6rem;}
-.page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,2.8rem);color:var(--white);line-height:1.15;margin-bottom:1rem;}
-.page-hero p{color:rgba(255,255,255,.78);font-size:1.05rem;line-height:1.65;}
-
-.products-section{padding:4rem 5%;}
-.section-title{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--navy);margin-bottom:.5rem;}
-.section-sub{color:var(--text-light);font-size:1rem;line-height:1.65;margin-bottom:2.5rem;max-width:640px;}
-
-.comm-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.75rem;}
-.comm-card{border:1px solid #e8e4de;border-radius:4px;overflow:hidden;transition:box-shadow .25s,transform .25s;}
-.comm-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.12);transform:translateY(-3px);}
-.comm-card-img{height:220px;overflow:hidden;background:#ddd;}
-.comm-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s;}
-.comm-card:hover .comm-card-img img{transform:scale(1.05);}
-.comm-card-body{padding:1.5rem;}
-.comm-card-body h3{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--navy);margin-bottom:.5rem;}
-.comm-card-body p{color:var(--text-light);font-size:.92rem;line-height:1.55;margin-bottom:1.1rem;}
-.comm-card-body a{color:var(--red);font-weight:700;font-size:.85rem;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;}
-.comm-card-body a:hover{text-decoration:underline;}
-
-.industries{background:var(--offwhite);padding:4rem 5%;}
-.ind-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.25rem;margin-top:2rem;}
-.ind-item{background:var(--white);border:1px solid #e0ddd8;border-radius:4px;padding:1.5rem 1.25rem;text-align:center;}
-.ind-icon{font-size:2rem;margin-bottom:.75rem;}
-.ind-item h4{font-size:.9rem;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.04em;}
-
-.cta-strip{background:var(--navy);padding:3.5rem 5%;text-align:center;}
-.cta-strip h2{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--white);margin-bottom:.75rem;}
-.cta-strip p{color:rgba(255,255,255,.75);margin-bottom:1.5rem;}
-.cta-strip-btns{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;}
-.btn-ghost{border:2px solid rgba(255,255,255,.6);color:var(--white);padding:.65rem 1.35rem;border-radius:3px;text-decoration:none;font-size:.88rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;transition:all .2s;}
-.btn-ghost:hover{background:rgba(255,255,255,.15);}
-
-footer{background:#0e1627;color:rgba(255,255,255,.65);padding:3rem 5% 1.75rem;}
-.footer-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:3rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.1);}
-.footer-brand img{height:52px;margin-bottom:1rem;filter:brightness(0) invert(1);opacity:.85;}
-.footer-brand p{font-size:.88rem;line-height:1.65;max-width:280px;}
-.footer-col h4{color:var(--white);font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.1rem;}
-.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:.6rem;}
-.footer-col ul li a{color:rgba(255,255,255,.6);text-decoration:none;font-size:.9rem;}
-.footer-col ul li a:hover{color:var(--gold-light);}
-.footer-bottom{padding-top:1.5rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.82rem;}
-@media(max-width:900px){.top-nav{padding:0 1.25rem;}.top-nav .main-links{display:none;}.hamburger{display:block;}.footer-grid{grid-template-columns:1fr 1fr;}}
-@media(max-width:560px){.footer-grid{grid-template-columns:1fr;}}
-```
-
+    .page-hero{background:var(--navy);padding:4rem 5%;position:relative;overflow:hidden;}
+    .page-hero::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:60px;background:var(--white);clip-path:ellipse(55% 100% at 50% 100%);}
+    .page-hero-inner{max-width:680px;position:relative;z-index:1;}
+    .section-label{font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light);margin-bottom:.6rem;}
+    .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,2.8rem);color:var(--white);line-height:1.15;margin-bottom:1rem;}
+    .page-hero p{color:rgba(255,255,255,.78);font-size:1.05rem;line-height:1.65;}
+    .products-section{padding:4rem 5%;}
+    .section-title{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--navy);margin-bottom:.5rem;}
+    .section-sub{color:var(--text-light);font-size:1rem;line-height:1.65;margin-bottom:2.5rem;max-width:640px;}
+    .comm-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.75rem;}
+    .comm-card{border:1px solid #e8e4de;border-radius:4px;overflow:hidden;transition:box-shadow .25s,transform .25s;}
+    .comm-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.12);transform:translateY(-3px);}
+    .comm-card-img{height:220px;overflow:hidden;background:#ddd;}
+    .comm-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s;}
+    .comm-card:hover .comm-card-img img{transform:scale(1.05);}
+    .comm-card-body{padding:1.5rem;}
+    .comm-card-body h3{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--navy);margin-bottom:.5rem;}
+    .comm-card-body p{color:var(--text-light);font-size:.92rem;line-height:1.55;margin-bottom:1.1rem;}
+    .comm-card-body a{color:var(--red);font-weight:700;font-size:.85rem;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;}
+    .comm-card-body a:hover{text-decoration:underline;}
+    .industries{background:var(--offwhite);padding:4rem 5%;}
+    .ind-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.25rem;margin-top:2rem;}
+    .ind-item{background:var(--white);border:1px solid #e0ddd8;border-radius:4px;padding:1.5rem 1.25rem;text-align:center;}
+    .ind-icon{font-size:2rem;margin-bottom:.75rem;}
+    .ind-item h4{font-size:.9rem;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.04em;}
+    .cta-strip{background:var(--navy);padding:3.5rem 5%;text-align:center;}
+    .cta-strip h2{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--white);margin-bottom:.75rem;}
+    .cta-strip p{color:rgba(255,255,255,.75);margin-bottom:1.5rem;}
+    .cta-strip-btns{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;}
+    .btn-ghost{border:2px solid rgba(255,255,255,.6);color:var(--white);padding:.65rem 1.35rem;border-radius:3px;text-decoration:none;font-size:.88rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;transition:all .2s;}
+    .btn-ghost:hover{background:rgba(255,255,255,.15);}
+    footer{background:#0e1627;color:rgba(255,255,255,.65);padding:3rem 5% 1.75rem;}
+    .footer-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:3rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.1);}
+    .footer-brand img{height:52px;margin-bottom:1rem;filter:brightness(0) invert(1);opacity:.85;}
+    .footer-brand p{font-size:.88rem;line-height:1.65;max-width:280px;}
+    .footer-col h4{color:var(--white);font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.1rem;}
+    .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:.6rem;}
+    .footer-col ul li a{color:rgba(255,255,255,.6);text-decoration:none;font-size:.9rem;}
+    .footer-col ul li a:hover{color:var(--gold-light);}
+    .footer-bottom{padding-top:1.5rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.82rem;}
+    @media(max-width:900px){.top-nav{padding:0 1.25rem;}.top-nav .main-links{display:none;}.hamburger{display:block;}.footer-grid{grid-template-columns:1fr 1fr;}}
+    @media(max-width:560px){.footer-grid{grid-template-columns:1fr;}}
   </style>
 </head>
 <body>
@@ -83,7 +73,7 @@ footer{background:#0e1627;color:rgba(255,255,255,.65);padding:3rem 5% 1.75rem;}
 <div class="announce-bar">Authorized Clopay® Dealer &nbsp;|&nbsp; Greater Birmingham, AL &nbsp;|&nbsp; <a href="tel:+12052173034">(205) 217-3034</a></div>
 
 <nav class="top-nav">
-  <a href="index.html" class="logo"><img src="/images/logo.png" alt="Barnes Garage Doors LLC"></a>
+  <a href="index.html" class="logo"><img src="images/logo.png" alt="Barnes Garage Doors LLC"></a>
   <ul class="main-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="residential.html">Residential</a></li>
@@ -113,61 +103,59 @@ footer{background:#0e1627;color:rgba(255,255,255,.65);padding:3rem 5% 1.75rem;}
 
   <div class="comm-grid">
 
-```
-<div class="comm-card">
-  <div class="comm-card-img" style="background:#1a2744;display:flex;align-items:center;justify-content:center;font-size:4rem;">🏭</div>
-  <div class="comm-card-body">
-    <h3>Rolling Steel Doors</h3>
-    <p>Clopay® rolling service doors provide efficiency and flexibility for both interior and exterior applications. Available in coiling, slat, and service configurations.</p>
-    <a href="contact.html">Request a Quote →</a>
-  </div>
-</div>
+    <div class="comm-card">
+      <div class="comm-card-img" style="background:#1a2744;display:flex;align-items:center;justify-content:center;font-size:4rem;">🏭</div>
+      <div class="comm-card-body">
+        <h3>Rolling Steel Doors</h3>
+        <p>Clopay® rolling service doors provide efficiency and flexibility for both interior and exterior applications. Available in coiling, slat, and service configurations.</p>
+        <a href="contact.html">Request a Quote →</a>
+      </div>
+    </div>
 
-<div class="comm-card">
-  <div class="comm-card-img" style="background:#243359;display:flex;align-items:center;justify-content:center;font-size:4rem;">🏢</div>
-  <div class="comm-card-body">
-    <h3>Overhead Sectional Doors</h3>
-    <p>Heavy-duty commercial sectional doors built for the demands of warehouses, loading docks, and high-traffic facilities. Multiple insulation options available.</p>
-    <a href="contact.html">Request a Quote →</a>
-  </div>
-</div>
+    <div class="comm-card">
+      <div class="comm-card-img" style="background:#243359;display:flex;align-items:center;justify-content:center;font-size:4rem;">🏢</div>
+      <div class="comm-card-body">
+        <h3>Overhead Sectional Doors</h3>
+        <p>Heavy-duty commercial sectional doors built for the demands of warehouses, loading docks, and high-traffic facilities. Multiple insulation options available.</p>
+        <a href="contact.html">Request a Quote →</a>
+      </div>
+    </div>
 
-<div class="comm-card">
-  <div class="comm-card-img" style="background:#1e3a5f;display:flex;align-items:center;justify-content:center;font-size:4rem;">🔒</div>
-  <div class="comm-card-body">
-    <h3>Rolling Grilles &amp; Counter Doors</h3>
-    <p>Ideal for retail storefronts, malls, and counter openings. Provides security and visibility with open- or closed-bar grille options.</p>
-    <a href="contact.html">Request a Quote →</a>
-  </div>
-</div>
+    <div class="comm-card">
+      <div class="comm-card-img" style="background:#1e3a5f;display:flex;align-items:center;justify-content:center;font-size:4rem;">🔒</div>
+      <div class="comm-card-body">
+        <h3>Rolling Grilles &amp; Counter Doors</h3>
+        <p>Ideal for retail storefronts, malls, and counter openings. Provides security and visibility with open- or closed-bar grille options.</p>
+        <a href="contact.html">Request a Quote →</a>
+      </div>
+    </div>
 
-<div class="comm-card">
-  <div class="comm-card-img" style="background:#2c3e50;display:flex;align-items:center;justify-content:center;font-size:4rem;">⚙️</div>
-  <div class="comm-card-body">
-    <h3>Sheet Doors</h3>
-    <p>Lightweight, compact rolling sheet doors for interior partitions and low-clearance openings. Smooth operation with minimal maintenance required.</p>
-    <a href="contact.html">Request a Quote →</a>
-  </div>
-</div>
+    <div class="comm-card">
+      <div class="comm-card-img" style="background:#2c3e50;display:flex;align-items:center;justify-content:center;font-size:4rem;">⚙️</div>
+      <div class="comm-card-body">
+        <h3>Sheet Doors</h3>
+        <p>Lightweight, compact rolling sheet doors for interior partitions and low-clearance openings. Smooth operation with minimal maintenance required.</p>
+        <a href="contact.html">Request a Quote →</a>
+      </div>
+    </div>
 
-<div class="comm-card">
-  <div class="comm-card-img" style="background:#1a2744;display:flex;align-items:center;justify-content:center;font-size:4rem;">🔧</div>
-  <div class="comm-card-body">
-    <h3>Rolling Operators &amp; Controls</h3>
-    <p>Commercial-grade operators and control systems for automated door management. We install and service all major commercial opener brands.</p>
-    <a href="contact.html">Request a Quote →</a>
-  </div>
-</div>
+    <div class="comm-card">
+      <div class="comm-card-img" style="background:#1a2744;display:flex;align-items:center;justify-content:center;font-size:4rem;">🔧</div>
+      <div class="comm-card-body">
+        <h3>Rolling Operators &amp; Controls</h3>
+        <p>Commercial-grade operators and control systems for automated door management. We install and service all major commercial opener brands.</p>
+        <a href="contact.html">Request a Quote →</a>
+      </div>
+    </div>
 
-<div class="comm-card">
-  <div class="comm-card-img" style="background:#243359;display:flex;align-items:center;justify-content:center;font-size:4rem;">🛠️</div>
-  <div class="comm-card-body">
-    <h3>Commercial Service &amp; Repair</h3>
-    <p>Fast-response commercial door service. We minimize your downtime with same-day or next-day service calls for springs, cables, panels, and openers.</p>
-    <a href="contact.html">Schedule Service →</a>
-  </div>
-</div>
-```
+    <div class="comm-card">
+      <div class="comm-card-img" style="background:#243359;display:flex;align-items:center;justify-content:center;font-size:4rem;">🛠️</div>
+      <div class="comm-card-body">
+        <h3>Commercial Service &amp; Repair</h3>
+        <p>Fast-response commercial door service. We minimize your downtime with same-day or next-day service calls for springs, cables, panels, and openers.</p>
+        <a href="contact.html">Schedule Service →</a>
+      </div>
+    </div>
 
   </div>
 </section>
@@ -198,12 +186,10 @@ footer{background:#0e1627;color:rgba(255,255,255,.65);padding:3rem 5% 1.75rem;}
 
 <footer>
   <div class="footer-grid">
-    <div class="footer-brand"><img src="/images/logo.png" alt="Barnes Garage Doors"><p>Barnes Garage Doors LLC — Authorized Clopay® Dealer serving Greater Birmingham, Alabama.</p></div>
+    <div class="footer-brand"><img src="images/logo.png" alt="Barnes Garage Doors"><p>Barnes Garage Doors LLC — Authorized Clopay® Dealer serving Greater Birmingham, Alabama.</p></div>
     <div class="footer-col"><h4>Products</h4><ul><li><a href="residential.html">Residential</a></li><li><a href="commercial.html">Commercial</a></li><li><a href="service.html">Service &amp; Repair</a></li></ul></div>
     <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
     <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+12052173034">(205) 217-3034</a></li><li><a href="contact.html">Schedule Appointment</a></li></ul></div>
   </div>
-  <div class="footer-bottom"><span>© 2025 Barnes Garage Doors LLC. All Rights Reserved.</span><span>Authorized Clopay® Dealer</span></div>
-</footer>
-</body>
-</html>
+  <div class="footer-bottom"><span>© 2025 Barnes Garage Doors LLC. All Rights Reserved.</span><span>Authorized Clopay® Dealer</span></div> </footer> </body> </html>
+

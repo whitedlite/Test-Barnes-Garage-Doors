@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us | Barnes Garage Doors LLC</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffonts.googleapis.com%2F&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C528585851a2d4b1585e908de9653e098%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484188691471%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=KFEYD7mRwsRSzyXA5ZWppHgsMShPNE066v23oJ6qBo4%3D&reserved=0">
+  <link href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffonts.googleapis.com%2Fcss2%3Ffamily%3DPlayfair%2BDisplay%3Awght%40600%3B700%26family%3DSource%2BSans%2B3%3Awght%40300%3B400%3B600%3B700%26display%3Dswap&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C528585851a2d4b1585e908de9653e098%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484188721679%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=79gHKISbpzEAwQvGZJHmu6XKoVaTIpfHIRHBTRRKJj0%3D&reserved=0" rel="stylesheet">
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
     :root{--navy:#1a2744;--gold:#b8975a;--gold-light:#d4b07a;--red:#c0392b;--red-hover:#a93226;--white:#ffffff;--offwhite:#f8f6f2;--text:#2c2c2c;--text-light:#555;}
@@ -25,63 +24,52 @@
     .phone-nav:hover{color:var(--gold);}
     .hamburger{display:none;background:none;border:none;cursor:pointer;padding:.4rem;}
     .hamburger span{display:block;width:24px;height:2px;background:var(--navy);margin:5px 0;}
-
-```
-.page-hero{background:var(--navy);padding:3.5rem 5%;position:relative;overflow:hidden;}
-.page-hero::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:60px;background:var(--offwhite);clip-path:ellipse(55% 100% at 50% 100%);}
-.page-hero-inner{max-width:600px;position:relative;z-index:1;}
-.section-label{font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light);margin-bottom:.6rem;}
-.page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.5rem);color:var(--white);line-height:1.2;margin-bottom:.75rem;}
-.page-hero p{color:rgba(255,255,255,.78);font-size:1rem;line-height:1.6;}
-
-.contact-layout{background:var(--offwhite);padding:4rem 5% 5rem;}
-.contact-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1.5fr;gap:3.5rem;align-items:start;}
-
-/* INFO SIDE */
-.contact-info h2{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--navy);margin-bottom:1.5rem;}
-.info-block{margin-bottom:1.75rem;}
-.info-block h4{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;}
-.info-block p,.info-block a{color:var(--text-light);font-size:.97rem;line-height:1.6;text-decoration:none;}
-.info-block a:hover{color:var(--navy);}
-.info-divider{width:40px;height:2px;background:var(--gold);margin-bottom:2rem;}
-
-.hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:.35rem 1rem;font-size:.9rem;}
-.hours-grid .day{color:var(--text-light);}
-.hours-grid .time{color:var(--navy);font-weight:600;}
-
-/* FORM SIDE */
-.contact-form-card{background:var(--white);border:1px solid #e0ddd8;border-radius:4px;padding:2.5rem;}
-.contact-form-card h2{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--navy);margin-bottom:.5rem;}
-.contact-form-card .form-sub{color:var(--text-light);font-size:.9rem;margin-bottom:1.75rem;}
-
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;}
-.form-group{margin-bottom:1.25rem;}
-.form-group label{display:block;font-size:.82rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--navy);margin-bottom:.45rem;}
-.form-group input,.form-group textarea,.form-group select{width:100%;padding:.7rem .9rem;border:1.5px solid #d8d4cc;border-radius:3px;font-family:inherit;font-size:.95rem;color:var(--text);background:var(--white);transition:border-color .2s,box-shadow .2s;outline:none;}
-.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--navy);box-shadow:0 0 0 3px rgba(26,39,68,.08);}
-.form-group textarea{resize:vertical;min-height:120px;}
-.error-message{color:var(--red);font-size:.82rem;margin-top:.3rem;display:block;}
-.form-submit{width:100%;padding:.85rem;background:var(--red);color:var(--white);border:none;border-radius:3px;font-size:.95rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;cursor:pointer;transition:background .2s;}
-.form-submit:hover{background:var(--red-hover);}
-
-footer{background:#0e1627;color:rgba(255,255,255,.65);padding:3rem 5% 1.75rem;}
-.footer-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:3rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.1);}
-.footer-brand img{height:52px;margin-bottom:1rem;filter:brightness(0) invert(1);opacity:.85;}
-.footer-brand p{font-size:.88rem;line-height:1.65;max-width:280px;}
-.footer-col h4{color:var(--white);font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.1rem;}
-.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:.6rem;}
-.footer-col ul li a{color:rgba(255,255,255,.6);text-decoration:none;font-size:.9rem;}
-.footer-col ul li a:hover{color:var(--gold-light);}
-.footer-bottom{padding-top:1.5rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.82rem;}
-
-@media(max-width:900px){
-  .top-nav{padding:0 1.25rem;}.top-nav .main-links{display:none;}.hamburger{display:block;}
-  .contact-inner{grid-template-columns:1fr;}.form-row{grid-template-columns:1fr;}
-  .footer-grid{grid-template-columns:1fr 1fr;}
-}
-@media(max-width:560px){.footer-grid{grid-template-columns:1fr;}}
-```
-
+    .page-hero{background:var(--navy);padding:3.5rem 5%;position:relative;overflow:hidden;}
+    .page-hero::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:60px;background:var(--offwhite);clip-path:ellipse(55% 100% at 50% 100%);}
+    .page-hero-inner{max-width:600px;position:relative;z-index:1;}
+    .section-label{font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light);margin-bottom:.6rem;}
+    .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.5rem);color:var(--white);line-height:1.2;margin-bottom:.75rem;}
+    .page-hero p{color:rgba(255,255,255,.78);font-size:1rem;line-height:1.6;}
+    .contact-layout{background:var(--offwhite);padding:4rem 5% 5rem;}
+    .contact-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1.5fr;gap:3.5rem;align-items:start;}
+    /* INFO SIDE */
+    .contact-info h2{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--navy);margin-bottom:1.5rem;}
+    .info-block{margin-bottom:1.75rem;}
+    .info-block h4{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;}
+    .info-block p,.info-block a{color:var(--text-light);font-size:.97rem;line-height:1.6;text-decoration:none;}
+    .info-block a:hover{color:var(--navy);}
+    .info-divider{width:40px;height:2px;background:var(--gold);margin-bottom:2rem;}
+    .hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:.35rem 1rem;font-size:.9rem;}
+    .hours-grid .day{color:var(--text-light);}
+    .hours-grid .time{color:var(--navy);font-weight:600;}
+    /* FORM SIDE */
+    .contact-form-card{background:var(--white);border:1px solid #e0ddd8;border-radius:4px;padding:2.5rem;}
+    .contact-form-card h2{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--navy);margin-bottom:.5rem;}
+    .contact-form-card .form-sub{color:var(--text-light);font-size:.9rem;margin-bottom:1.75rem;}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;}
+    .form-group{margin-bottom:1.25rem;}
+    .form-group label{display:block;font-size:.82rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--navy);margin-bottom:.45rem;}
+    .form-group input,.form-group textarea,.form-group select{width:100%;padding:.7rem .9rem;border:1.5px solid #d8d4cc;border-radius:3px;font-family:inherit;font-size:.95rem;color:var(--text);background:var(--white);transition:border-color .2s,box-shadow .2s;outline:none;}
+    .form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--navy);box-shadow:0 0 0 3px rgba(26,39,68,.08);}
+    .form-group textarea{resize:vertical;min-height:120px;}
+    .error-message{color:var(--red);font-size:.82rem;margin-top:.3rem;display:block;}
+    .form-submit{width:100%;padding:.85rem;background:var(--red);color:var(--white);border:none;border-radius:3px;font-size:.95rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;cursor:pointer;transition:background .2s;}
+    .form-submit:hover{background:var(--red-hover);}
+    footer{background:#0e1627;color:rgba(255,255,255,.65);padding:3rem 5% 1.75rem;}
+    .footer-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:3rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.1);}
+    .footer-brand img{height:52px;margin-bottom:1rem;filter:brightness(0) invert(1);opacity:.85;}
+    .footer-brand p{font-size:.88rem;line-height:1.65;max-width:280px;}
+    .footer-col h4{color:var(--white);font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.1rem;}
+    .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:.6rem;}
+    .footer-col ul li a{color:rgba(255,255,255,.6);text-decoration:none;font-size:.9rem;}
+    .footer-col ul li a:hover{color:var(--gold-light);}
+    .footer-bottom{padding-top:1.5rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.82rem;}
+    @media(max-width:900px){
+      .top-nav{padding:0 1.25rem;}.top-nav .main-links{display:none;}.hamburger{display:block;}
+      .contact-inner{grid-template-columns:1fr;}.form-row{grid-template-columns:1fr;}
+      .footer-grid{grid-template-columns:1fr 1fr;}
+    }
+    @media(max-width:560px){.footer-grid{grid-template-columns:1fr;}}
   </style>
 </head>
 <body>
@@ -89,7 +77,7 @@ footer{background:#0e1627;color:rgba(255,255,255,.65);padding:3rem 5% 1.75rem;}
 <div class="announce-bar">Authorized Clopay® Dealer &nbsp;|&nbsp; Greater Birmingham, AL &nbsp;|&nbsp; <a href="tel:+12052173034">(205) 217-3034</a></div>
 
 <nav class="top-nav">
-  <a href="index.html" class="logo"><img src="/images/logo.png" alt="Barnes Garage Doors LLC"></a>
+  <a href="index.html" class="logo"><img src="images/logo.png" alt="Barnes Garage Doors LLC"></a>
   <ul class="main-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="residential.html">Residential</a></li>
@@ -115,86 +103,83 @@ footer{background:#0e1627;color:rgba(255,255,255,.65);padding:3rem 5% 1.75rem;}
 <div class="contact-layout">
   <div class="contact-inner">
 
-```
-<div class="contact-info">
-  <h2>We'd Love to Hear From You</h2>
-  <div class="info-divider"></div>
-  <div class="info-block">
-    <h4>Phone</h4>
-    <p><a href="tel:+12052173034">(205) 217-3034</a></p>
-  </div>
-  <div class="info-block">
-    <h4>Service Area</h4>
-    <p>Greater Birmingham, Alabama — including Hoover, Vestavia Hills, Trussville, Alabaster, Pelham, Mountain Brook, Homewood, Gardendale, Leeds, and surrounding areas.</p>
-  </div>
-  <div class="info-block">
-    <h4>Hours</h4>
-    <div class="hours-grid">
-      <span class="day">Monday – Friday</span><span class="time">8:00 AM – 6:00 PM</span>
-      <span class="day">Saturday</span><span class="time">9:00 AM – 4:00 PM</span>
-      <span class="day">Sunday</span><span class="time">Emergency Only</span>
-    </div>
-  </div>
-  <div class="info-block">
-    <h4>Emergency Service</h4>
-    <p>Door won't open or stuck? Call us — we offer same-day emergency response throughout the Greater Birmingham area.</p>
-  </div>
-</div>
-
-<div class="contact-form-card">
-  <h2>Send Us a Message</h2>
-  <p class="form-sub">Fill out the form below and we'll get back to you within one business day.</p>
-
-  <form action="https://formspree.io/f/mnndykpa" method="POST">
-    <div class="form-row">
-      <div class="form-group">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" placeholder="First &amp; Last Name" required>
-        <span id="nameError" class="error-message"></span>
+    <div class="contact-info">
+      <h2>We'd Love to Hear From You</h2>
+      <div class="info-divider"></div>
+      <div class="info-block">
+        <h4>Phone</h4>
+        <p><a href="tel:+12052173034">(205) 217-3034</a></p>
       </div>
-      <div class="form-group">
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="(205) 000-0000" required>
-        <span id="phoneError" class="error-message"></span>
+      <div class="info-block">
+        <h4>Service Area</h4>
+        <p>Greater Birmingham, Alabama — including Hoover, Vestavia Hills, Trussville, Alabaster, Pelham, Mountain Brook, Homewood, Gardendale, Leeds, and surrounding areas.</p>
+      </div>
+      <div class="info-block">
+        <h4>Hours</h4>
+        <div class="hours-grid">
+          <span class="day">Monday – Friday</span><span class="time">8:00 AM – 6:00 PM</span>
+          <span class="day">Saturday</span><span class="time">9:00 AM – 4:00 PM</span>
+          <span class="day">Sunday</span><span class="time">Emergency Only</span>
+        </div>
+      </div>
+      <div class="info-block">
+        <h4>Emergency Service</h4>
+        <p>Door won't open or stuck? Call us — we offer same-day emergency response throughout the Greater Birmingham area.</p>
       </div>
     </div>
-    <div class="form-group">
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+    <div class="contact-form-card">
+      <h2>Send Us a Message</h2>
+      <p class="form-sub">Fill out the form below and we'll get back to you within one business day.</p>
+
+      <form action="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fformspree.io%2Ff%2Fmnndykpa&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C528585851a2d4b1585e908de9653e098%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484188747908%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=NAnD8g2La56JLhn%2B2tUIDA7tg0FrYpUgkuddYrYpU94%3D&reserved=0" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="First &amp; Last Name" required>
+            <span id="nameError" class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(205) 000-0000" required>
+            <span id="phoneError" class="error-message"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="service">How Can We Help?</label>
+          <select id="service" name="service">
+            <option value="">— Select a Service —</option>
+            <option>New Door Installation</option>
+            <option>Door Repair</option>
+            <option>Opener Repair / Replacement</option>
+            <option>Spring Replacement</option>
+            <option>Commercial Door</option>
+            <option>General Question / Quote</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Describe what you need — the more detail the better!" required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Message →</button>
+      </form>
     </div>
-    <div class="form-group">
-      <label for="service">How Can We Help?</label>
-      <select id="service" name="service">
-        <option value="">— Select a Service —</option>
-        <option>New Door Installation</option>
-        <option>Door Repair</option>
-        <option>Opener Repair / Replacement</option>
-        <option>Spring Replacement</option>
-        <option>Commercial Door</option>
-        <option>General Question / Quote</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="Describe what you need — the more detail the better!" required></textarea>
-    </div>
-    <button type="submit" class="form-submit">Send Message →</button>
-  </form>
-</div>
-```
 
   </div>
 </div>
 
 <footer>
   <div class="footer-grid">
-    <div class="footer-brand"><img src="/images/logo.png" alt="Barnes Garage Doors"><p>Barnes Garage Doors LLC — Authorized Clopay® Dealer serving Greater Birmingham, Alabama.</p></div>
+    <div class="footer-brand"><img src="images/logo.png" alt="Barnes Garage Doors"><p>Barnes Garage Doors LLC — Authorized Clopay® Dealer serving Greater Birmingham, Alabama.</p></div>
     <div class="footer-col"><h4>Products</h4><ul><li><a href="residential.html">Residential</a></li><li><a href="commercial.html">Commercial</a></li><li><a href="service.html">Service &amp; Repair</a></li></ul></div>
     <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
     <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+12052173034">(205) 217-3034</a></li><li><a href="contact.html">Schedule Appointment</a></li></ul></div>
   </div>
-  <div class="footer-bottom"><span>© 2025 Barnes Garage Doors LLC. All Rights Reserved.</span><span>Authorized Clopay® Dealer</span></div>
-</footer>
+  <div class="footer-bottom"><span>© 2025 Barnes Garage Doors LLC. All Rights Reserved.</span><span>Authorized Clopay® Dealer</span></div> </footer>
 
 <script>
   document.addEventListener("DOMContentLoaded",function(){
@@ -207,3 +192,4 @@ footer{background:#0e1627;color:rgba(255,255,255,.65);padding:3rem 5% 1.75rem;}
 
 </body>
 </html>
+

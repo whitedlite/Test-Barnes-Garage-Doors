@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Residential Garage Doors | Barnes Garage Doors LLC</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffonts.googleapis.com%2F&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317129819%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=b0hBCIESrha4wk6BfavH0ZLWzLxSLqoYwfiqDU84NsU%3D&reserved=0">
+  <link href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffonts.googleapis.com%2Fcss2%3Ffamily%3DPlayfair%2BDisplay%3Awght%40600%3B700%26family%3DSource%2BSans%2B3%3Awght%40300%3B400%3B600%3B700%26display%3Dswap&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317170063%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=ad%2BvrBFv93DcfsbLHoG6qLgDjwD735E%2BuLCXycedNzk%3D&reserved=0" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -15,79 +14,67 @@
       --gray-light: #efefef; --text: #2c2c2c; --text-light: #555;
     }
     body { font-family: 'Source Sans 3', sans-serif; color: var(--text); background: var(--white); }
-
-```
-.announce-bar { background: var(--navy); color: var(--gold-light); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em; text-align: center; padding: 0.55rem 1rem; text-transform: uppercase; }
-.announce-bar a { color: inherit; }
-
-.top-nav { background: var(--white); border-bottom: 1px solid #e0ddd8; padding: 0 2.5rem; display: flex; align-items: center; justify-content: space-between; height: 80px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
-.top-nav .logo img { height: 58px; width: auto; display: block; }
-.top-nav .main-links { display: flex; align-items: center; gap: 0.1rem; list-style: none; }
-.top-nav .main-links > li > a { display: block; padding: 0.6rem 1rem; color: var(--navy); text-decoration: none; font-size: 0.92rem; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; transition: color 0.2s; }
-.top-nav .main-links > li > a:hover, .top-nav .main-links > li > a.active { color: var(--gold); }
-.top-nav .nav-actions { display: flex; align-items: center; gap: 1rem; }
-.btn-primary { background: var(--red); color: var(--white); padding: 0.6rem 1.35rem; border-radius: 3px; text-decoration: none; font-size: 0.88rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; transition: background 0.2s; border: none; cursor: pointer; }
-.btn-primary:hover { background: var(--red-hover); }
-.phone-nav { color: var(--navy); font-size: 0.95rem; font-weight: 700; text-decoration: none; }
-.phone-nav:hover { color: var(--gold); }
-.hamburger { display: none; background: none; border: none; cursor: pointer; padding: 0.4rem; }
-.hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); margin: 5px 0; }
-
-/* PAGE HERO */
-.page-hero { background: var(--navy); padding: 4rem 5%; position: relative; overflow: hidden; }
-.page-hero::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 60px; background: var(--white); clip-path: ellipse(55% 100% at 50% 100%); }
-.page-hero-inner { max-width: 700px; position: relative; z-index: 1; }
-.section-label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 0.6rem; }
-.page-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 2.8rem); color: var(--white); line-height: 1.15; margin-bottom: 1rem; }
-.page-hero p { color: rgba(255,255,255,0.78); font-size: 1.05rem; line-height: 1.65; }
-
-/* PRODUCTS */
-.products-section { padding: 4rem 5%; background: var(--white); }
-.products-header { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.5rem; }
-.products-header h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--navy); }
-.product-count { color: var(--text-light); font-size: 0.9rem; }
-
-.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.75rem; }
-
-.product-card { background: var(--white); border: 1px solid #e8e4de; border-radius: 4px; overflow: hidden; transition: box-shadow 0.25s, transform 0.25s; }
-.product-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.12); transform: translateY(-3px); }
-.product-card-img { position: relative; overflow: hidden; height: 220px; background: var(--gray-light); }
-.product-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
-.product-card:hover .product-card-img img { transform: scale(1.04); }
-.product-card-body { padding: 1.25rem 1.35rem 1.5rem; }
-.product-card-body h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--navy); margin-bottom: 0.4rem; line-height: 1.25; }
-.product-card-body p { color: var(--text-light); font-size: 0.9rem; line-height: 1.55; margin-bottom: 1.1rem; }
-.product-card-actions { display: flex; gap: 0.75rem; }
-.btn-brochure { border: 1.5px solid var(--navy); color: var(--navy); padding: 0.5rem 1rem; border-radius: 3px; text-decoration: none; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; transition: all 0.2s; cursor: pointer; background: none; }
-.btn-brochure:hover { background: var(--navy); color: var(--white); }
-.btn-quote { background: var(--red); color: var(--white); padding: 0.5rem 1rem; border-radius: 3px; text-decoration: none; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; transition: background 0.2s; border: none; cursor: pointer; }
-.btn-quote:hover { background: var(--red-hover); }
-
-/* CTA STRIP */
-.cta-strip { background: var(--offwhite); border-top: 1px solid #e0ddd8; border-bottom: 1px solid #e0ddd8; padding: 3.5rem 5%; text-align: center; }
-.cta-strip h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--navy); margin-bottom: 0.75rem; }
-.cta-strip p { color: var(--text-light); font-size: 1rem; margin-bottom: 1.5rem; }
-.cta-strip-btns { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
-
-footer { background: #0e1627; color: rgba(255,255,255,0.65); padding: 3rem 5% 1.75rem; }
-.footer-grid { display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 3rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
-.footer-brand img { height: 52px; margin-bottom: 1rem; filter: brightness(0) invert(1); opacity: 0.85; }
-.footer-brand p { font-size: 0.88rem; line-height: 1.65; max-width: 280px; }
-.footer-col h4 { color: var(--white); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1.1rem; }
-.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
-.footer-col ul li a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
-.footer-col ul li a:hover { color: var(--gold-light); }
-.footer-bottom { padding-top: 1.5rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; font-size: 0.82rem; }
-
-@media (max-width: 900px) {
-  .top-nav { padding: 0 1.25rem; }
-  .top-nav .main-links { display: none; }
-  .hamburger { display: block; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
-}
-@media (max-width: 560px) { .footer-grid { grid-template-columns: 1fr; } }
-```
-
+    .announce-bar { background: var(--navy); color: var(--gold-light); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em; text-align: center; padding: 0.55rem 1rem; text-transform: uppercase; }
+    .announce-bar a { color: inherit; }
+    .top-nav { background: var(--white); border-bottom: 1px solid #e0ddd8; padding: 0 2.5rem; display: flex; align-items: center; justify-content: space-between; height: 80px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+    .top-nav .logo img { height: 58px; width: auto; display: block; }
+    .top-nav .main-links { display: flex; align-items: center; gap: 0.1rem; list-style: none; }
+    .top-nav .main-links > li > a { display: block; padding: 0.6rem 1rem; color: var(--navy); text-decoration: none; font-size: 0.92rem; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; transition: color 0.2s; }
+    .top-nav .main-links > li > a:hover, .top-nav .main-links > li > a.active { color: var(--gold); }
+    .top-nav .nav-actions { display: flex; align-items: center; gap: 1rem; }
+    .btn-primary { background: var(--red); color: var(--white); padding: 0.6rem 1.35rem; border-radius: 3px; text-decoration: none; font-size: 0.88rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; transition: background 0.2s; border: none; cursor: pointer; }
+    .btn-primary:hover { background: var(--red-hover); }
+    .phone-nav { color: var(--navy); font-size: 0.95rem; font-weight: 700; text-decoration: none; }
+    .phone-nav:hover { color: var(--gold); }
+    .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 0.4rem; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); margin: 5px 0; }
+    /* PAGE HERO */
+    .page-hero { background: var(--navy); padding: 4rem 5%; position: relative; overflow: hidden; }
+    .page-hero::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 60px; background: var(--white); clip-path: ellipse(55% 100% at 50% 100%); }
+    .page-hero-inner { max-width: 700px; position: relative; z-index: 1; }
+    .section-label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 0.6rem; }
+    .page-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 2.8rem); color: var(--white); line-height: 1.15; margin-bottom: 1rem; }
+    .page-hero p { color: rgba(255,255,255,0.78); font-size: 1.05rem; line-height: 1.65; }
+    /* PRODUCTS */
+    .products-section { padding: 4rem 5%; background: var(--white); }
+    .products-header { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.5rem; }
+    .products-header h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--navy); }
+    .product-count { color: var(--text-light); font-size: 0.9rem; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.75rem; }
+    .product-card { background: var(--white); border: 1px solid #e8e4de; border-radius: 4px; overflow: hidden; transition: box-shadow 0.25s, transform 0.25s; }
+    .product-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.12); transform: translateY(-3px); }
+    .product-card-img { position: relative; overflow: hidden; height: 220px; background: var(--gray-light); }
+    .product-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+    .product-card:hover .product-card-img img { transform: scale(1.04); }
+    .product-card-body { padding: 1.25rem 1.35rem 1.5rem; }
+    .product-card-body h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--navy); margin-bottom: 0.4rem; line-height: 1.25; }
+    .product-card-body p { color: var(--text-light); font-size: 0.9rem; line-height: 1.55; margin-bottom: 1.1rem; }
+    .product-card-actions { display: flex; gap: 0.75rem; }
+    .btn-brochure { border: 1.5px solid var(--navy); color: var(--navy); padding: 0.5rem 1rem; border-radius: 3px; text-decoration: none; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; transition: all 0.2s; cursor: pointer; background: none; }
+    .btn-brochure:hover { background: var(--navy); color: var(--white); }
+    .btn-quote { background: var(--red); color: var(--white); padding: 0.5rem 1rem; border-radius: 3px; text-decoration: none; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; transition: background 0.2s; border: none; cursor: pointer; }
+    .btn-quote:hover { background: var(--red-hover); }
+    /* CTA STRIP */
+    .cta-strip { background: var(--offwhite); border-top: 1px solid #e0ddd8; border-bottom: 1px solid #e0ddd8; padding: 3.5rem 5%; text-align: center; }
+    .cta-strip h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--navy); margin-bottom: 0.75rem; }
+    .cta-strip p { color: var(--text-light); font-size: 1rem; margin-bottom: 1.5rem; }
+    .cta-strip-btns { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+    footer { background: #0e1627; color: rgba(255,255,255,0.65); padding: 3rem 5% 1.75rem; }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 3rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .footer-brand img { height: 52px; margin-bottom: 1rem; filter: brightness(0) invert(1); opacity: 0.85; }
+    .footer-brand p { font-size: 0.88rem; line-height: 1.65; max-width: 280px; }
+    .footer-col h4 { color: var(--white); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1.1rem; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+    .footer-col ul li a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col ul li a:hover { color: var(--gold-light); }
+    .footer-bottom { padding-top: 1.5rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; font-size: 0.82rem; }
+    @media (max-width: 900px) {
+      .top-nav { padding: 0 1.25rem; }
+      .top-nav .main-links { display: none; }
+      .hamburger { display: block; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 560px) { .footer-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -95,7 +82,7 @@ footer { background: #0e1627; color: rgba(255,255,255,0.65); padding: 3rem 5% 1.
 <div class="announce-bar">Authorized Clopay® Dealer &nbsp;|&nbsp; Greater Birmingham, AL &nbsp;|&nbsp; <a href="tel:+12052173034">(205) 217-3034</a></div>
 
 <nav class="top-nav">
-  <a href="index.html" class="logo"><img src="/images/logo.png" alt="Barnes Garage Doors LLC"></a>
+  <a href="index.html" class="logo"><img src="images/logo.png" alt="Barnes Garage Doors LLC"></a>
   <ul class="main-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="residential.html" class="active">Residential</a></li>
@@ -126,247 +113,245 @@ footer { background: #0e1627; color: rgba(255,255,255,0.65); padding: 3rem 5% 1.
   </div>
   <div class="product-grid">
 
-```
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/avante.webp" alt="Avante®"></div>
-  <div class="product-card-body">
-    <h3>Avante®</h3>
-    <p>Sleek aluminum frame and glass doors with a contemporary look.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-AVANTEBR-24.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/avante.webp" alt="Avante®"></div>
+      <div class="product-card-body">
+        <h3>Avante®</h3>
+        <p>Sleek aluminum frame and glass doors with a contemporary look.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-AVANTEBR-24.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317201614%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=NsErDvctzSYKZGH%2BBVlQ6ilijHAV4WKrofe72sAo4V4%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/vertistack-avante.webp" alt="VertiStack® Avante®"></div>
-  <div class="product-card-body">
-    <h3>VertiStack® Avante®</h3>
-    <p>Trackless stacking glass garage doors — no overhead tracks needed.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-AVANTEBR-24.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/vertistack-avante.webp" alt="VertiStack® Avante®"></div>
+      <div class="product-card-body">
+        <h3>VertiStack® Avante®</h3>
+        <p>Trackless stacking glass garage doors — no overhead tracks needed.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-AVANTEBR-24.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317230999%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=NwhuLGjhwNGsOsR98rHWDVgKZSkihztQz3J8X06jKg0%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/avante-sleek.webp" alt="Avante® Sleek"></div>
-  <div class="product-card-body">
-    <h3>Avante® Sleek</h3>
-    <p>Frameless contemporary glass design for a seamless modern aesthetic.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-AVANTEBR-24.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/avante-sleek.webp" alt="Avante® Sleek"></div>
+      <div class="product-card-body">
+        <h3>Avante® Sleek</h3>
+        <p>Frameless contemporary glass design for a seamless modern aesthetic.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-AVANTEBR-24.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317259694%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=PKeGo3Ol8zfvyiATXMnqMDLbZcszJqzHmi8DBQXeZzU%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/gallery-steel.webp" alt="Gallery® Steel"></div>
-  <div class="product-card-body">
-    <h3>Gallery® Steel</h3>
-    <p>Grooved panel steel doors with classic carriage house appeal.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-GALLERY3LAYERSS-10.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/gallery-steel.webp" alt="Gallery® Steel"></div>
+      <div class="product-card-body">
+        <h3>Gallery® Steel</h3>
+        <p>Grooved panel steel doors with classic carriage house appeal.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-GALLERY3LAYERSS-10.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317282605%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=cSBNwOtlweXmVK8p0gEvLggjKxF7xyAPA5GIPfKKfcw%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/bridgeport.webp" alt="Bridgeport™ Steel"></div>
-  <div class="product-card-body">
-    <h3>Bridgeport™ Steel</h3>
-    <p>Timeless shaker-style steel garage doors in a modern finish.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-BRIDGEPORT3LAYERSS-20.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/bridgeport.webp" alt="Bridgeport™ Steel"></div>
+      <div class="product-card-body">
+        <h3>Bridgeport™ Steel</h3>
+        <p>Timeless shaker-style steel garage doors in a modern finish.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-BRIDGEPORT3LAYERSS-20.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317302447%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=42NkTgGhrhJkfmOOn4VAnt56rxaVYfebZVMHPMTY7Gs%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/modern-steel.webp" alt="Modern Steel™"></div>
-  <div class="product-card-body">
-    <h3>Modern Steel™</h3>
-    <p>Clean flush-panel steel doors in a range of contemporary finishes.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-MODERNSTEELSS-15.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/modern-steel.webp" alt="Modern Steel™"></div>
+      <div class="product-card-body">
+        <h3>Modern Steel™</h3>
+        <p>Clean flush-panel steel doors in a range of contemporary finishes.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-MODERNSTEELSS-15.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317324152%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=CNE0QqAS8D0EjT3Godt6TUjRanhvbl0oiU8HUhU0pSs%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/modern-steel-plank.webp" alt="Modern Steel™ Ultra-Grain® Plank"></div>
-  <div class="product-card-body">
-    <h3>Modern Steel™ Ultra-Grain® Plank</h3>
-    <p>Digitally-printed horizontal planks with a stunning stained wood look.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-MODERNSTEELSS-15.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/modern-steel-plank.webp" alt="Modern Steel™ Ultra-Grain® Plank"></div>
+      <div class="product-card-body">
+        <h3>Modern Steel™ Ultra-Grain® Plank</h3>
+        <p>Digitally-printed horizontal planks with a stunning stained wood look.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-MODERNSTEELSS-15.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317342626%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=kz9FnlqisluQbncGZeA56P6nBKrcD%2FKQFGvW64atXTs%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/classic-steel.webp" alt="Classic™ Steel"></div>
-  <div class="product-card-body">
-    <h3>Classic™ Steel</h3>
-    <p>Short or long panel raised designs — a versatile, durable classic.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-MODERNSTEELSS-15.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/classic-steel.webp" alt="Classic™ Steel"></div>
+      <div class="product-card-body">
+        <h3>Classic™ Steel</h3>
+        <p>Short or long panel raised designs — a versatile, durable classic.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-MODERNSTEELSS-15.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317361094%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=scv9ogOEf5I6xHrA3zFPRBmyyRpJxj8KIBRXKd26vOo%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/canyon-ridge-carriage-house-5-layer.webp" alt="Canyon Ridge® Carriage House 5-Layer"></div>
-  <div class="product-card-body">
-    <h3>Canyon Ridge® Carriage House 5-Layer</h3>
-    <p>Insulated composite faux wood overlays with exceptional curb appeal.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-CANYONRIDGEBR-20.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/canyon-ridge-carriage-house-5-layer.webp" alt="Canyon Ridge® Carriage House 5-Layer"></div>
+      <div class="product-card-body">
+        <h3>Canyon Ridge® Carriage House 5-Layer</h3>
+        <p>Insulated composite faux wood overlays with exceptional curb appeal.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-CANYONRIDGEBR-20.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317381135%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=isWG1A8HElk%2BNQI%2FMgAoZHaF9E5IUgsF8nLrZY4YEK8%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/canyon-ridge-chevron.webp" alt="Canyon Ridge® Chevron"></div>
-  <div class="product-card-body">
-    <h3>Canyon Ridge® Chevron</h3>
-    <p>Bold chevron pattern faux wood doors — a true statement piece.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-CANYONRIDGEBR-20.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/canyon-ridge-chevron.webp" alt="Canyon Ridge® Chevron"></div>
+      <div class="product-card-body">
+        <h3>Canyon Ridge® Chevron</h3>
+        <p>Bold chevron pattern faux wood doors — a true statement piece.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-CANYONRIDGEBR-20.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317402767%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=TmxXQTx4UifkGH7FcfCIuiUv3XNb%2Bg2i8WYRGKscQXc%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/canyon-ridge-louver.webp" alt="Canyon Ridge® Louver"></div>
-  <div class="product-card-body">
-    <h3>Canyon Ridge® Louver</h3>
-    <p>Tropical-inspired louver panel design with beautiful visual depth.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-CANYONRIDGEBR-20.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/canyon-ridge-louver.webp" alt="Canyon Ridge® Louver"></div>
+      <div class="product-card-body">
+        <h3>Canyon Ridge® Louver</h3>
+        <p>Tropical-inspired louver panel design with beautiful visual depth.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-CANYONRIDGEBR-20.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317427809%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=wmATZOCJJChLZuMrp0MgK%2FkDD5nKyrz9wdeZDfSg3Rg%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/canyon-ridge-carriage-house-4-layer.webp" alt="Canyon Ridge® Carriage House 4-Layer"></div>
-  <div class="product-card-body">
-    <h3>Canyon Ridge® Carriage House 4-Layer</h3>
-    <p>Insulated faux wood doors on a durable steel base.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-CANYONRIDGEBR-20.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/canyon-ridge-carriage-house-4-layer.webp" alt="Canyon Ridge® Carriage House 4-Layer"></div>
+      <div class="product-card-body">
+        <h3>Canyon Ridge® Carriage House 4-Layer</h3>
+        <p>Insulated faux wood doors on a durable steel base.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-CANYONRIDGEBR-20.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317453151%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=yUHmasZu%2BQXhT139v6eRH9t0D7mEtKtVnezq%2BycQ4Ls%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/canyon-ridge-modern.webp" alt="Canyon Ridge® Modern"></div>
-  <div class="product-card-body">
-    <h3>Canyon Ridge® Modern</h3>
-    <p>Contemporary faux wood styles with clean flush panels.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-CANYONRIDGEBR-20.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/canyon-ridge-modern.webp" alt="Canyon Ridge® Modern"></div>
+      <div class="product-card-body">
+        <h3>Canyon Ridge® Modern</h3>
+        <p>Contemporary faux wood styles with clean flush panels.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-CANYONRIDGEBR-20.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317477331%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=lru090NfQxmKhsk6tE8c%2F0NaX6yPNHVkst5n%2FkRdZJk%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/canyon-ridge-elements.webp" alt="Canyon Ridge® Elements"></div>
-  <div class="product-card-body">
-    <h3>Canyon Ridge® Elements</h3>
-    <p>Painted faux wood garage doors — low maintenance, high style.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-CANYONRIDGEBR-20.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/canyon-ridge-elements.webp" alt="Canyon Ridge® Elements"></div>
+      <div class="product-card-body">
+        <h3>Canyon Ridge® Elements</h3>
+        <p>Painted faux wood garage doors — low maintenance, high style.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-CANYONRIDGEBR-20.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317501279%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=eKQBmKSiCG4HzB3PKHo1PNl6ynBRxSdId15t0R%2BtscM%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/coachman.webp" alt="Coachman®"></div>
-  <div class="product-card-body">
-    <h3>Coachman®</h3>
-    <p>Insulated steel and composite carriage house doors for lasting beauty.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-COACHSS-12.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/coachman.webp" alt="Coachman®"></div>
+      <div class="product-card-body">
+        <h3>Coachman®</h3>
+        <p>Insulated steel and composite carriage house doors for lasting beauty.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-COACHSS-12.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317519746%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2BiUsk%2BfZYcFexvAOHnrtI%2F%2Fvtp1Lyw6pOWCu0v1QU9E%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/reserve-wood-custom.webp" alt="Reserve® Wood Limited Edition & Custom"></div>
-  <div class="product-card-body">
-    <h3>Reserve® Wood Limited Edition &amp; Custom</h3>
-    <p>Handcrafted solid wood garage doors — truly one of a kind.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-WOODIDEA-10.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/reserve-wood-custom.webp" alt="Reserve® Wood Limited Edition & Custom"></div>
+      <div class="product-card-body">
+        <h3>Reserve® Wood Limited Edition &amp; Custom</h3>
+        <p>Handcrafted solid wood garage doors — truly one of a kind.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-WOODIDEA-10.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317538033%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=GKbC2cXj6alAQaLBeAbI%2F%2F3a0igHSL6DTnfXEwUVYLE%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/reserve-wood-modern.webp" alt="Reserve® Wood Modern"></div>
-  <div class="product-card-body">
-    <h3>Reserve® Wood Modern</h3>
-    <p>Contemporary natural wood doors with a refined, architectural finish.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-WOODIDEA-10.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/reserve-wood-modern.webp" alt="Reserve® Wood Modern"></div>
+      <div class="product-card-body">
+        <h3>Reserve® Wood Modern</h3>
+        <p>Contemporary natural wood doors with a refined, architectural finish.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-WOODIDEA-10.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317556901%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=aeo1KXvh688gWcPMP4I7OzHl%2B07dXTmDop9ZzFVrd1g%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/reserve-wood-semi-custom.webp" alt="Reserve® Wood Semi-Custom"></div>
-  <div class="product-card-body">
-    <h3>Reserve® Wood Semi-Custom</h3>
-    <p>Semi-custom real wood garage doors at an accessible price point.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-WOODIDEA-10.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/reserve-wood-semi-custom.webp" alt="Reserve® Wood Semi-Custom"></div>
+      <div class="product-card-body">
+        <h3>Reserve® Wood Semi-Custom</h3>
+        <p>Semi-custom real wood garage doors at an accessible price point.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-WOODIDEA-10.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317578686%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=kiUutrRcEu6hJF9OEmN16jkWLwq26eGPFhgeeyHCr8M%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/reserve-wood-extira.webp" alt="Reserve® Wood Extira®"></div>
-  <div class="product-card-body">
-    <h3>Reserve® Wood Extira®</h3>
-    <p>Engineered Extira® wood — the beauty of wood with greater moisture resistance.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-WOODIDEA-10.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/reserve-wood-extira.webp" alt="Reserve® Wood Extira®"></div>
+      <div class="product-card-body">
+        <h3>Reserve® Wood Extira®</h3>
+        <p>Engineered Extira® wood — the beauty of wood with greater moisture resistance.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-WOODIDEA-10.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317598400%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=ODUWsQOAtjGWRxOMMPB4ujYTiCzSW1O4hH4JX8px9Kw%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="product-card">
-  <div class="product-card-img"><img src="/images/collections/classic-wood.webp" alt="Classic™ Wood"></div>
-  <div class="product-card-body">
-    <h3>Classic™ Wood</h3>
-    <p>Traditional raised panel wood garage doors with timeless character.</p>
-    <div class="product-card-actions">
-      <button class="btn-brochure" onclick="window.open('https://literature.clopay.com/pdf_files/RSDR-WOODIDEA-10.pdf','_blank')">Brochure</button>
-      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    <div class="product-card">
+      <div class="product-card-img"><img src="images/collections/classic-wood.webp" alt="Classic™ Wood"></div>
+      <div class="product-card-body">
+        <h3>Classic™ Wood</h3>
+        <p>Traditional raised panel wood garage doors with timeless character.</p>
+        <div class="product-card-actions">
+          <button class="btn-brochure" onclick="window.open('https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fliterature.clopay.com%2Fpdf_files%2FRSDR-WOODIDEA-10.pdf%27%2C%27_blank&data=05%7C02%7Ctannerbarnes%40thompsontractor.com%7C83d8737d71084470e83d08de9653ca49%7C02b136010568417f9ecab20f5d0225c4%7C0%7C0%7C639113484317617750%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=f0Ob0ZcjIyg0854tqSvpvh%2B4tCuT4J%2FD%2FBQW%2FZ2yqEk%3D&reserved=0')">Brochure</button>
+          <a href="contact.html" class="btn-quote">Get a Quote</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-```
 
   </div>
 </section>
@@ -383,15 +368,15 @@ footer { background: #0e1627; color: rgba(255,255,255,0.65); padding: 3rem 5% 1.
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <img src="/images/logo.png" alt="Barnes Garage Doors">
+      <img src="images/logo.png" alt="Barnes Garage Doors">
       <p>Barnes Garage Doors LLC — Authorized Clopay® Dealer serving Greater Birmingham, Alabama.</p>
     </div>
     <div class="footer-col"><h4>Products</h4><ul><li><a href="residential.html">Residential</a></li><li><a href="commercial.html">Commercial</a></li><li><a href="service.html">Service &amp; Repair</a></li></ul></div>
     <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
     <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+12052173034">(205) 217-3034</a></li><li><a href="contact.html">Schedule Appointment</a></li></ul></div>
   </div>
-  <div class="footer-bottom"><span>© 2025 Barnes Garage Doors LLC. All Rights Reserved.</span><span>Authorized Clopay® Dealer</span></div>
-</footer>
+  <div class="footer-bottom"><span>© 2025 Barnes Garage Doors LLC. All Rights Reserved.</span><span>Authorized Clopay® Dealer</span></div> </footer>
 
 </body>
 </html>
+
